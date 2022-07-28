@@ -1,6 +1,7 @@
 import './App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Component } from 'react';
+import HomePage from "./Pages/HomePage/HomePage";
 
 class App extends Component {
 
@@ -8,13 +9,11 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Header />
           <Switch>
-            {/* <Route path="/" exact component={} />
-            <Route path="/route1" exact component={} />
+            <Route path="/" exact component={HomePage} />
+            {/* <Route path="/route1" exact component={} />
             <Route path="/route1:dynamic" exact component={} /> */}
           </Switch> 
-          <Footer />
         </BrowserRouter>
       </div>
     );
