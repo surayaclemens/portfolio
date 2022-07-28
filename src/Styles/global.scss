@@ -1,0 +1,25 @@
+@use './partials/typography' as *;
+@use './partials/colors' as *;
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+  
+  body {
+    margin: 0;
+    font-family: 
+    color: 
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  ul {
+    padding: 0;
+  }
