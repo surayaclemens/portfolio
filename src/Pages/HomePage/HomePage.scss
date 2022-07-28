@@ -1,0 +1,73 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+
+
+.home{
+text-align: left;
+
+    &__header-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+
+    &__header{
+        &--hidden{
+            display: none;
+        }
+        
+    }
+
+    &__main-content{
+        margin: 0rem 1.5rem;
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 80vh;
+        
+    }
+
+    &__subheader{
+        &--right{
+            align-self: flex-end;
+            color: white;
+            &:hover{
+                color: $pink;
+            }
+        }
+   
+        
+    }
+
+    &__body{
+        line-height: 1.8rem;
+        margin: .7rem 0;
+   
+        
+        &--bold{
+            font-weight: 600;
+        }
+        &--pink{
+            color: $pink;
+        }
+        &--blue{
+            color: $blue; 
+        }
+        &--green{
+            color: $green;
+        }
+        &--yellow{
+            color: $yellow;
+        }
+    }
+}
