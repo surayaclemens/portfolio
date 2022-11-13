@@ -1,0 +1,40 @@
+@use '../Partials/colors' as *;
+
+
+@keyframes colorChange {
+    0%   {
+        color: $pink;
+    }
+    
+    25%  {
+        color: $blue;
+    }
+    
+    50%  {
+        color: $green;
+    }
+    
+    75%  {
+        color: $yellow;
+    }
+    
+    100% {
+        color: $pink;
+    }
+    
+  }
+
+
+  @keyframes blink {
+    0%   {
+    }
+    
+    50%  {
+        color: white;
+    }
+    
+    100% {
+    
+    }
+    
+  }

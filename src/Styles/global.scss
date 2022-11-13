@@ -1,5 +1,9 @@
 @use './partials/typography' as *;
 @use './partials/colors' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+
 
 html {
     box-sizing: border-box;
@@ -11,25 +15,40 @@ html {
   body {
     margin: 0;
     font-family: "Inter";
+    color: rgb(60, 60, 60);
   
   }
 
 
   h1 {
     font-size: 3.125rem;
+    @include tablet{
+      font-size: 3.5rem;
+    }
+
   }
 
   h2 {
     font-size: 1.25rem;
+    @include tablet{
+      font-size: 1.65rem;
+      line-height: 3rem;
+    }
   }
 
   h3 {
     font-size: .75rem;
+    @include tablet{
+      font-size: 1rem;
+    }
   }
 
   a {
     text-decoration: none;
-    cursor: pointer;
+    // cursor: pointer;
+    &:visited{
+    color: rgb(60, 60, 60);
+    }
   }
 
 

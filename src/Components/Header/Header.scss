@@ -1,0 +1,29 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0 1.25rem 2rem;
+    @include tablet {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    &__back{
+        @include tablet{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    &__text{
+        @include tablet {
+            margin: 0 1rem;
+        }
+    }
+}
