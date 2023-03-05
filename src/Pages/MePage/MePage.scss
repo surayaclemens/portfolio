@@ -10,7 +10,7 @@
     height: 100%;
 
     &__item{
-        font-size: 2rem;
+        font-size: 1.5rem;
         // margin: .5rem;
         
     }
@@ -21,20 +21,9 @@
 
     &__link{
         text-decoration: underline;
+        cursor: pointer;
     }
 
-    &__saluki{
-        width: 30%;
-        height: auto;
-        position: absolute;
-        left: 48%;
-        top: 15%;
-
-        &--hidden{
-            display: none;
-        }
-
-    }
 
 
 

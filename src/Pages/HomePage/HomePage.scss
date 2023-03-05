@@ -105,6 +105,10 @@ text-align: left;
         &--italic{
             font-style: italic;
         }
+
+        &--link{
+            cursor: pointer;
+        }
     }
 }
 

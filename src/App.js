@@ -4,6 +4,7 @@ import { Component } from 'react';
 import HomePage from "./Pages/HomePage/HomePage";
 import TetrisPage from "./Pages/TetrisPage/TetrisPage";
 import MePage from './Pages/MePage/MePage';
+import CoffeeShopPage from './Pages/CoffeeShopPage/CoffeeShopPage';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route path="/ayajuthemtetris" component={TetrisPage} />
+            <Route path="/coffeeshop" component={CoffeeShopPage} />
             <Route path="/moreaboutme" component={MePage} />
             {/* <Route path="/website" component={WebsitePage} /> */}
 
