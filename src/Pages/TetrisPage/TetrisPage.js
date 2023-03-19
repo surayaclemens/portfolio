@@ -32,7 +32,7 @@ class TetrisPage extends Component {
                   loop={true}
                 />
 
-                <h3 className='tetris__subheader'>built with react, scss, node, express, data in mySQL</h3>
+                <h3 className='tetris__subheader'>built with javascript, react, scss, node, express, data in mySQL</h3>
                 <h3 className='tetris__subheader'>in a two-week sprint as the final project of my web development diploma</h3>
                 <h3 className='tetris__subheader'>july 2022</h3>
 

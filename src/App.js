@@ -5,6 +5,8 @@ import HomePage from "./Pages/HomePage/HomePage";
 import TetrisPage from "./Pages/TetrisPage/TetrisPage";
 import MePage from './Pages/MePage/MePage';
 import CoffeeShopPage from './Pages/CoffeeShopPage/CoffeeShopPage';
+import CedulifyPage from './Pages/CedulifyPage/CedulifyPage';
+import AlatuliePage from './Pages/AlatuliePage/AlatuliePage';
 
 class App extends Component {
 
@@ -16,6 +18,9 @@ class App extends Component {
             <Route path="/" exact component={HomePage} />
             <Route path="/ayajuthemtetris" component={TetrisPage} />
             <Route path="/coffeeshop" component={CoffeeShopPage} />
+            <Route path="/alatulie" component={AlatuliePage} />
+            <Route path="/cedulify" component={CedulifyPage} />
+
             <Route path="/moreaboutme" component={MePage} />
             {/* <Route path="/website" component={WebsitePage} /> */}
 

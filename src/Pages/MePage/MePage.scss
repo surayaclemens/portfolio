@@ -8,6 +8,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    @include tablet{
+        padding: 0 10%;
+    }
+    @include mobile{
+        padding: 0 10%;
+    }
 
     &__item{
         font-size: 1.5rem;

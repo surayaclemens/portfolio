@@ -1,8 +1,8 @@
 import './HomePage.scss';
-import { BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Component } from 'react';
 import Modal from '../../Components/Modal/Modal';
+import resume from '../../Assets/resume-march-2023.pdf';
 
 function HomePage () {
 
@@ -60,18 +60,18 @@ function HomePage () {
 
                     <h2 className='home__body'><NavLink to='/coffeeshop'><span className='home__body--green home__body--grow'>this </span></NavLink>coffee shop marketing site</h2>
 
-                    <h2 className='home__body'><NavLink to='/'><span className='home__body--yellow home__body--grow'>this </span></NavLink>inventory management app</h2>  
+                    <h2 className='home__body'><NavLink to='/alatulie'><span className='home__body--yellow home__body--grow'>this </span></NavLink>nerdy english to elvish translator</h2>  
 
-                    <h2 className='home__body'><NavLink to=''><span className='home__body--pink home__body--grow'>this </span> </NavLink>mindful calendar app</h2> 
+                    <h2 className='home__body'><NavLink to='/cedulify'><span className='home__body--pink home__body--grow'>this </span> </NavLink>mindful calendar app</h2> 
 
                 </section>
 
                 {/* TECH DETAILS */}
                 <section className='home__section'>
                     <h3 className='home__subheader'>brass tacks</h3>
-                    <h2 className='home__body'>I typically design in<span className="home__body--pink"> Figma </span>and build in<span className="home__body--blue"> React || Angular </span></h2>
+                    <h2 className='home__body'>I typically design in<span className="home__body--pink"> Figma </span>and build in<span className="home__body--blue"> Angular || React </span></h2>
                     <h2 className='home__body home__body--bold'>spin up the back end with<span className="home__body--green"> Node.js && Express </span></h2>
-                    <h2 className='home__body'>and manage data with<span className="home__body--yellow"> SQL || Firebase</span></h2>
+                    <h2 className='home__body'>and manage data with<span className="home__body--yellow"> Firebase || SQL</span></h2>
                     <h2 className='home__body home__body--bold'>but I bet I can learn your framework too :~) </h2>
                     <h2 className='home__body home__body--bold'>
                       <span className='home__body--pink home__body--grow' onClick={showModal}>this </span>
@@ -84,30 +84,37 @@ function HomePage () {
                 {/* LINKS */}
                 <section className='home__section'>
                     <h3 className='home__subheader'>links links links</h3>
-                      <h2 className='home__body home__body--link' onClick={copyToClipboard}>here's my
-                          <span className="home__body--pink"> email </span>
+                      <h2 className='home__body'>
+                        here's my
+                        <span className="home__body--pink home__body--link" onClick={copyToClipboard}> email </span>
+                        and
+                        <a href={resume} target = "_blank">
+                          <span className="home__body--pink home__body--link"> resume </span></a>
+
                       </h2>
 
-                      <h2 className='home__body home__body--link'>you can find me on 
+                     
+
+                      <h2 className='home__body'>you can find me on 
                         <a href='https://www.linkedin.com/in/suraya-clemens/' target="_blank">
-                          <span className="home__body--blue"> linkedIn </span>
+                          <span className="home__body--blue home__body--link"> linkedIn </span>
                         </a>
                       </h2>
 
-                      <h2 className='home__body home__body--link'>maybe lurk my commits on 
+                      <h2 className='home__body'>maybe lurk my commits on 
                         <a href='https://github.com/surayaclemens' target="_blank">
-                          <span className="home__body--green"> gitHub </span>
+                          <span className="home__body--green home__body--link"> gitHub </span>
                         </a>
                       </h2>
 
-                      <h2 className='home__body home__body--link'>do you know
+                      <h2 className='home__body'>also, do you know
                         <a href='https://www.whose.land/en/' target="_blank">
-                          <span className="home__body--yellow"> whose land </span> 
+                          <span className="home__body--yellow home__body--link">whose land </span> 
                         </a>
                           you're on?
                       </h2>
 
-                      <p className='home__body--small'>^ this isn't mine, I just think you should look at it!</p>
+                      <p className='home__body--small'>this one isn't mine, I just think you should look at it!</p>
                 </section>
 
 

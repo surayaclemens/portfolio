@@ -29,6 +29,8 @@ class CoffeeShopPage extends Component {
                 />
 
                 <h3 className='coffee-shop__subheader'> built with vanilla HTML & CSS</h3>
+                <h3 className='page__subheader'>april 2022</h3>
+
 
               </section>
 
