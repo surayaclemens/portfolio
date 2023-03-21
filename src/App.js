@@ -11,6 +11,8 @@ import AlatuliePage from './Pages/AlatuliePage/AlatuliePage';
 class App extends Component {
 
   render() {
+    document.title="suraya clemens | web developer"
+
     return (
       <div className="App">
         <BrowserRouter>

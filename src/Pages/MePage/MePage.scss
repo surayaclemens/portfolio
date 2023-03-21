@@ -8,29 +8,29 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    padding: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 10%;
+
     @include tablet{
         padding: 0 10%;
     }
-    @include mobile{
-        padding: 0 10%;
-    }
-
     &__item{
         font-size: 1.5rem;
         // margin: .5rem;
-        
     }
-
     &__p{
-        margin: 1.75rem;
+     
     }
 
     &__link{
         text-decoration: underline;
         cursor: pointer;
     }
-
-
-
 
 }
