@@ -35,8 +35,8 @@
     }
 
     &__video{
-        width: 85vw;
-        height: auto;
+        height: 65vh;
+        width: auto;
         margin: 0 2rem 2rem 2rem;
         @include tablet {
             width: 100%;

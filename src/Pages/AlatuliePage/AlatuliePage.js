@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Component } from 'react';
 import Header from '../../Components/Header/Header';
 import React from 'react';
-import TetrisDemo from '../../Assets/AJT-demo-no-audio.mov';
+import alatulieDemo from '../../Assets/alatulie-demo.mov';
 
 class AlatuliePage extends Component {
 
@@ -20,11 +20,11 @@ class AlatuliePage extends Component {
               <section className='page__content'>
 
                 <h2 className='page__body'><span className='page__body--blue'>this </span>translation app that fetches the Elvish language output of English input</h2>
-                <h3 className='page__subheader'>(I recently became a Lord of the Rings fan)</h3>
+                <h3 className='page__subheader'>(an elaboration of a 24-hour hackathon project)</h3>
 
                 <video 
                   className='page__video' 
-                //   src={pageDemo}
+                  src={alatulieDemo}
                   autoPlay={true}
                   loop={true}
                 />

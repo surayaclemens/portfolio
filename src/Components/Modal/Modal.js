@@ -14,9 +14,11 @@ function Modal ({ modal, hideStackModal }){
             </div>
 
             <h3 className='modal__subheader'>I'm comfortable developing with</h3>
-            <p className='modal__text'>HTML, CSS, Sass, JavaScript, TypeScript, React, Angular, Axios, RxJs, Express, Node, SQL, Firebase, Heroku</p>
+            <p className='modal__text'>HTML, CSS, Sass, JavaScript, TypeScript, React, Angular, Express, Node, Firebase</p>
+            <h3 className='modal__subheader'>and have experience with</h3>
+            <p className='modal__text'> SQL, Axios, RxJs, Google Cloud Platform, Heroku, Docker, Meta Conversions API, Stripe API</p>
             <h3 className='modal__subheader'>also a big fan of using</h3>
-            <p className='modal__text'>Figma, Notion, Agile development methods</p>
+            <p className='modal__text'>GitHub, Figma, Notion, Agile development methods</p>
         </main>
 
     );

@@ -4,15 +4,15 @@
 @use '../../Styles/Partials/animations' as *;
 
 
-.page{
+.cedulify{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     &__content{
         @include tablet{
-            padding: 0 15% 2% 15%;
             align-items: center;
+            width: 100%;
         }
 
     }
@@ -22,6 +22,12 @@
         margin: 0 2rem 2rem 2rem;
         &--blue{
             color: $blue;
+        }
+        &--pink{
+            color: $pink;
+            &:visited{
+                color: $pink;
+            }
         }
         @include tablet {
             width: 100%;
@@ -42,6 +48,9 @@
             width: 100%;
             margin: 1rem 0;
         }
-
     }
+}
+
+a {
+    color: $yellow;
 }

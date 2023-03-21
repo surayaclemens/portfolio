@@ -2,7 +2,7 @@ import './HomePage.scss';
 import { NavLink} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Modal from '../../Components/Modal/Modal';
-import resume from '../../Assets/resume-march-2023.pdf';
+import resume from '../../Assets/suraya-clemens-resume.pdf';
 
 function HomePage () {
 
@@ -54,7 +54,7 @@ function HomePage () {
 
                     <h3 className='home__subheader'> some things I've built</h3>
                     
-                    <h2 className='home__body'><NavLink to='/website'><span className='home__body--pink home__body--grow'>this </span> </NavLink>website you're looking at (thanks!)</h2>
+                    <h2 className='home__body'>this website you're looking at (thanks!)</h2>
 
                     <h2 className='home__body'><NavLink to='/ayajuthemtetris'><span className='home__body--blue home__body--grow'>this </span> </NavLink>tetris-inspired language game for ʔayʔaǰuθəm learners</h2>
 
@@ -109,7 +109,7 @@ function HomePage () {
 
                       <h2 className='home__body'>also, do you know
                         <a href='https://www.whose.land/en/' target="_blank">
-                          <span className="home__body--yellow home__body--link">whose land </span> 
+                          <span className="home__body--yellow home__body--link"> whose land </span> 
                         </a>
                           you're on?
                       </h2>
