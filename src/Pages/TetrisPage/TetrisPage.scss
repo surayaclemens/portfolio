@@ -10,12 +10,17 @@
     align-items: flex-start;
 
     &__content{
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include tablet{
             padding: 0 15% 2% 15%;
             align-items: center;
         }
-
     }
+
+
    
     &__body{
         text-align: center;
@@ -32,6 +37,7 @@
 
     &__subheader{
         margin: 0.5rem 0;
+        text-align: center;
     }
 
     &__video{
