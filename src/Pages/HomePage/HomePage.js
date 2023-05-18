@@ -62,7 +62,7 @@ function HomePage () {
 
                     <h2 className='home__body'><NavLink to='/alatulie'><span className='home__body--yellow home__body--grow'>this </span></NavLink>nerdy english to elvish translator</h2>  
 
-                    <h2 className='home__body'><NavLink to='/cedulify'><span className='home__body--pink home__body--grow'>this </span> </NavLink>mindful calendar app</h2> 
+                    <h2 className='home__body'><NavLink to='/cedulify'><span className='home__body--pink home__body--grow'>this </span> </NavLink>wellness company's user portal</h2> 
 
                 </section>
 
@@ -107,14 +107,14 @@ function HomePage () {
                         </a>
                       </h2>
 
-                      <h2 className='home__body'>also, do you know
+                      {/* <h2 className='home__body'>also, do you know
                         <a href='https://www.whose.land/en/' target="_blank">
                           <span className="home__body--yellow home__body--link"> whose land </span> 
                         </a>
                           you're on?
                       </h2>
 
-                      <p className='home__body--small'>this one isn't mine, I just think you should look at it!</p>
+                      <p className='home__body--small'>this one isn't mine, I just think you should look at it!</p> */}
                 </section>
 
 

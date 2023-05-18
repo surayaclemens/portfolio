@@ -1,5 +1,4 @@
 import './MePage.scss';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Component } from 'react';
 import Header from '../../Components/Header/Header';
 import React from 'react';
@@ -32,6 +31,8 @@ class MePage extends Component {
                   <h1 className='list__item'>I love reading historical fiction</h1>
                   <h1 className='list__item'>I'm passionate about social justice and can't stand political apathy</h1>
                   <h1 className='list__item'>I love comedy and trying to make people laugh</h1>
+                  <h1 className='list__item'>I believe strongly in reconciliation and decolonization. Do you know <a 
+                  href='https://www.whose.land/en/' target="_blank">whose land</a> you're on?</h1>
                   <h1 className='list__item'>want to know something else?</h1>
                   <h1 className='list__item'>
                     <p className='list__link' onClick={this.copyToClipboard}>send me a note</p> 
