@@ -1,14 +1,13 @@
 import './Modal.scss';
-import CloseX from '../../Assets/close-x.svg';
+import CloseX from '../../Assets/yellow-close-x.svg';
+
 import React from 'react';
 
-function Modal ({ modal, hideStackModal }){
-
-    const modalDisplayClass = modal ? "modal" : "modal--hidden"
-
+function Modal ({ modal, hideStackModal, isDarkMode }){
+        
     return (
 
-        <main className={modalDisplayClass}>
+        <main className={modal ? 'modal' : 'modal--hidden'}>
             <div className='modal__x-wrap'>
                 <img className='modal__x' src={CloseX} onClick={hideStackModal}/>
             </div>

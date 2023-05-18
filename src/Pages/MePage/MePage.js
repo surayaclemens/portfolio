@@ -6,10 +6,19 @@ import React from 'react';
 class MePage extends Component {
 
   copyToClipboard(){
-    navigator.clipboard.writeText('surayaclemens@gmail.com')
-    setTimeout(() => {
-      (alert('📧 📬 💌 Email copied to clipboard! 📧 📬 💌'))
-    }, 100);
+    // navigator.clipboard.writeText('surayaclemens@gmail.com')
+    // setTimeout(() => {
+    //   (alert('📧 📬 💌 Email copied to clipboard! 📧 📬 💌'))
+    // }, 100);
+    // trying new strategy for it to work when deployed
+    const text = 'surayaclemens@gmail.com';
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('📧 📬 💌 Email copied to clipboard! 📧 📬 💌');
   }
 
   render() {

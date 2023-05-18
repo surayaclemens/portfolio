@@ -1,6 +1,6 @@
 import './Header.scss';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
-import BackArrow from '../../Assets/back_arrow.svg';
+import BackArrow from '../../Assets/green-back-arrow.svg';
 import React from 'react';
 
 function Header ({text}){

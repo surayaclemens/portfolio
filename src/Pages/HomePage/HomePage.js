@@ -1,10 +1,11 @@
 import './HomePage.scss';
 import { NavLink} from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Modal from '../../Components/Modal/Modal';
 import resume from '../../Assets/suraya-clemens-resume.pdf';
 
-function HomePage () {
+
+function HomePage (isDarkMode) {
 
   // set initial state
   const [modal, setModalState] = useState(false);
@@ -31,10 +32,10 @@ function HomePage () {
 
   document.title="Suraya Clemens - Web Developer"
     return (
-      <div className="home">
-            <div className='home__header-box'>
-                <h1 className='home__header'> hello world </h1>
-            </div>
+      <div className='home'>
+            <header className='home__header-box'>
+              <h1 className='home__header'> hello world </h1>
+            </header>
 
             <main className='home__main-content'>
                 {/* INTRO SECTION */}
@@ -77,7 +78,7 @@ function HomePage () {
                       <span className='home__body--pink home__body--grow' onClick={showModal}>this </span>
                       is a list of more things I know
                     </h2>  
-                <Modal modal={modal} hideStackModal={hideModal}/>
+                <Modal modal={modal} hideStackModal={hideModal} isDarkMode={isDarkMode}/>
 
                 </section>
 
@@ -101,20 +102,13 @@ function HomePage () {
                         </a>
                       </h2>
 
-                      <h2 className='home__body'>maybe lurk my commits on 
+                      <h2 className='home__body'>and browse my commits on 
                         <a href='https://github.com/surayaclemens' target="_blank">
                           <span className="home__body--green home__body--link"> gitHub </span>
                         </a>
                       </h2>
 
-                      {/* <h2 className='home__body'>also, do you know
-                        <a href='https://www.whose.land/en/' target="_blank">
-                          <span className="home__body--yellow home__body--link"> whose land </span> 
-                        </a>
-                          you're on?
-                      </h2>
-
-                      <p className='home__body--small'>this one isn't mine, I just think you should look at it!</p> */}
+                      <h2 className='home__body'>ttyl!</h2>
                 </section>
 
 

@@ -13,21 +13,16 @@ class CedulifyPage extends Component {
     document.title="cedulify"
 
     return (
-    
             <main className='cedulify'>
-
               <Header text=""/>
-
               <section className='cedulify__content'>
-
-                {/* <h2 className='cedulify__body'><span className='cedulify__body--blue'>this </span>mindful calendar app</h2> */}
                 <h2 className='cedulify__body'>
                   <span>
                     <a className='cedulify__body--pink' href='https://www.cedulify.com/' target="_blank">this </a>
                     </span> 
                   wellness company's user portal
                 </h2>
-                <h3 className='cedulify__subheader'>more features on their way 👀</h3>
+                <h3 className='cedulify__subheader'><a className='cedulify__body--pink' href='https://www.cedulify.com/mobile-app' target="_blank">more features </a>coming to web soon! 👀</h3>
                 <div className='cedulify__videos'>
                   <video 
                     className='cedulify__video' 
@@ -43,9 +38,7 @@ class CedulifyPage extends Component {
                   />
                 </div>
                 <h3 className='cedulify__subheader'>currently in progress with typescript, angular, scss, node, express, firebase</h3>
-
               </section>
-
             </main>
     );
   }

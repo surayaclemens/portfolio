@@ -4,10 +4,12 @@
 @use '../../Styles/Partials/animations' as *;
 
 
-
-
 .home{
-text-align: left;
+    text-align: left;
+    &--dark-mode{
+        background-color: black;
+        color: white;
+    }
 
     &__header-box{
         display: flex;
@@ -29,6 +31,14 @@ text-align: left;
         
     }
 
+    // &__mode-box{
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     align-items: flex-start;
+    //     height: 40%;
+    // }
+
     &__main-content{
         margin: 0rem 1.5rem;
         @include tablet {
@@ -41,7 +51,7 @@ text-align: left;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
-        margin: 6rem 0;
+        padding: 4rem 0;
         // height: 80vh;
         
     }
@@ -111,3 +121,13 @@ text-align: left;
 .animation-blink{
     // animation: blink 1.5s linear infinite;
 }
+
+// .mode-icon{
+//     display: block;
+//     width: 2rem;
+//     margin: 1rem;
+//     &--hidden{
+//         display: none;
+//     }
+// }
+
