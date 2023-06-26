@@ -59,19 +59,14 @@
 
     &__subheader{
         font-weight: bold;
-        &--more{
-            font-size: 1.5rem;
-            color: white;
+        text-transform: uppercase;
             &:hover{
-                color: $pink;
-
+                color: $red;
             }
 
             // border: 1px solid red;
         }
    
-        
-    }
 
     &__body{
         // line-height: 1.8rem;
@@ -80,17 +75,17 @@
         &--bold{
             font-weight: 600;
         }
-        &--pink{
-            color: $pink;
+        &--red{
+            color: $red;
         }
         &--blue{
             color: $blue; 
         }
-        &--green{
-            color: $green;
+        &--indigo{
+            color: $indigo;
         }
-        &--yellow{
-            color: $yellow;
+        &--orange{
+            color: $orange;
         }
         &--small{
             font-size: .75rem;
@@ -98,7 +93,7 @@
         }
         &--grow{
             &:hover{
-                font-size: 2.5rem;
+                text-decoration: underline;
                 cursor: pointer;
             }
         }
@@ -114,6 +109,7 @@
 
         &--link{
             cursor: pointer;
+    
         }
     }
 }

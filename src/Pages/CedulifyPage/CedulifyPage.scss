@@ -23,10 +23,10 @@
         &--blue{
             color: $blue;
         }
-        &--pink{
-            color: $pink;
+        &--red{
+            color: $red;
             &:visited{
-                color: $pink;
+                color: $red;
             }
         }
         @include tablet {
@@ -61,5 +61,5 @@
 }
 
 a {
-    color: $yellow;
+    color: $orange;
 }

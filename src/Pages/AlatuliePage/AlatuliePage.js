@@ -19,8 +19,7 @@ class AlatuliePage extends Component {
 
               <section className='page__content'>
 
-                <h2 className='page__body'><span className='page__body--blue'>this </span>translation app that fetches the Elvish language output of English input</h2>
-                <h3 className='page__subheader'>(an elaboration of a 24-hour hackathon project)</h3>
+                <h2 className='page__body'><span className='page__body--blue'>This </span>translation app that fetches an Elvish language output of English input</h2>
 
                 <video 
                   className='page__video' 
@@ -29,8 +28,8 @@ class AlatuliePage extends Component {
                   loop={true}
                 />
 
-                <h3 className='page__subheader'>built with javascript, react, scss, node, express, axios</h3>
-                <h3 className='page__subheader'>november 2022</h3>
+                <h3 className='page__subheader'>Built with Javascript, React, SCSS, Node.js</h3>
+                <h3 className='page__subheader'>November 2022</h3>
 
 
               </section>
