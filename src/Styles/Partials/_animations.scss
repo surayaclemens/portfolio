@@ -3,23 +3,27 @@
 
 @keyframes colorChange {
     0%   {
-        color: $pink;
+        color: $indigo;
     }
     
-    25%  {
+    20%  {
         color: $blue;
     }
     
-    50%  {
-        color: $green;
+    40%  {
+        color: $red;
     }
     
-    75%  {
+    60%  {
+        color: $orange;
+    }
+    
+    80% {
         color: $yellow;
     }
-    
+
     100% {
-        color: $pink;
+        color: $indigo;
     }
     
   }

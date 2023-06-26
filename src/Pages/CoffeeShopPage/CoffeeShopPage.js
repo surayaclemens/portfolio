@@ -19,7 +19,7 @@ class CoffeeShopPage extends Component {
 
               <section className='coffee-shop__content'>
 
-                <h2 className='coffee-shop__body'><span className='coffee-shop__body--blue'>this </span>coffee shop marketing site</h2>
+                <h2 className='coffee-shop__body'><span className='coffee-shop__body--blue'>This </span>coffee shop marketing site</h2>
 
                 <video 
                   className='coffee-shop__video' 
@@ -28,8 +28,8 @@ class CoffeeShopPage extends Component {
                   loop={true}
                 />
 
-                <h3 className='coffee-shop__subheader'> built with vanilla HTML & CSS</h3>
-                <h3 className='page__subheader'>april 2022</h3>
+                <h3 className='coffee-shop__subheader'> Built with vanilla HTML & CSS</h3>
+                <h3 className='page__subheader'>April 2022</h3>
 
 
               </section>

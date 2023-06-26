@@ -21,9 +21,9 @@ class TetrisPage extends Component {
 
               <section className='tetris__content'>
 
-                <h2 className='tetris__body'><span className='tetris__body--blue'>this </span>tetris-inspired language game for ʔayʔaǰuθəm learners</h2>
-                <h3 className='tetris__subheader'>immense gratitude to the K’ómoks First Nation for sharing their language and Dr. Suzanne Urbanczyk for connecting us</h3>
-
+                <h2 className='tetris__body'><span className='tetris__body--blue'>This </span>tetris-inspired language game for ʔayʔaǰuθəm learners</h2>
+                <h3 className='tetris__subheader'>Immense gratitude to the K’ómoks First Nation for sharing their language and Dr. Suzanne Urbanczyk for connecting us</h3>
+                <h3 className='tetris__subheader'>Version 1 below. Version 2 coming soon!</h3>
 
                 <video 
                   className='tetris__video' 
@@ -32,9 +32,9 @@ class TetrisPage extends Component {
                   loop={true}
                 />
 
-                <h3 className='tetris__subheader'>built with javascript, react, scss, node, express, data in mySQL</h3>
-                <h3 className='tetris__subheader'>in a two-week sprint as the final project of my web development diploma</h3>
-                <h3 className='tetris__subheader'>july 2022</h3>
+                <h3 className='tetris__subheader'>Built with Javascript, React, SCSS, Node.js, SQL</h3>
+                <h3 className='tetris__subheader'>This was the final project of my web development diploma, completed within a two-week sprint</h3>
+                <h3 className='tetris__subheader'>July 2022</h3>
 
 
               </section>
