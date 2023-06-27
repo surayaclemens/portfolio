@@ -6,6 +6,7 @@
 
 .home{
     text-align: left;
+    padding: 0 0 3rem 0;
     &--dark-mode{
         background-color: black;
         color: white;
@@ -17,27 +18,11 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-image: url('../../Assets/clouds.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
-    &__header{
-        animation: colorChange 5s ease-in-out infinite;
-        &--hidden{
-            display: none;
-        }
-        
+    &__hero{
+        animation: blink 2.5s ease-in forwards;
     }
-
-    // &__mode-box{
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: flex-end;
-    //     align-items: flex-start;
-    //     height: 40%;
-    // }
 
     &__main-content{
         margin: 0rem 1.5rem;
@@ -51,29 +36,24 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
-        padding: 4rem 0;
-        // height: 80vh;
-        
+        padding: 2rem 0;
+        // background-color: #D9D9D93B;
+        @include desktop {
+            padding: 2rem 0;
+        }
     }
 
-
     &__subheader{
-        font-weight: bold;
+        font-size: .78rem;
+        font-weight: 700;
         text-transform: uppercase;
-            &:hover{
-                color: $red;
-            }
-
-            // border: 1px solid red;
         }
    
 
     &__body{
-        // line-height: 1.8rem;
-        margin: .7rem 0;
-   
-        &--bold{
-            font-weight: 600;
+        // margin: .7rem 0;
+        @include desktop {
+            font-size: 1.13rem;
         }
         &--red{
             color: $red;
@@ -87,43 +67,65 @@
         &--orange{
             color: $orange;
         }
-        &--small{
-            font-size: .75rem;
-            margin-top: -.25rem;
-        }
-        &--grow{
-            &:hover{
-                text-decoration: underline;
-                cursor: pointer;
-            }
-        }
-
         &--bold{
-            font-weight: bold;
-
+            font-weight: 600;
         }
-
         &--italic{
             font-style: italic;
         }
-
         &--link{
             cursor: pointer;
-    
+        }
+        &--list{
+            margin: 0;
+            line-height: 1.5rem;
+        }
+        &--small{
+            font-size: .85rem;
+            margin: 0 0 0 1.15rem;
         }
     }
 }
 
-.animation-blink{
-    // animation: blink 1.5s linear infinite;
+.value-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2rem 0;
+
+    &__ball{
+        height: 50px;
+        // border: 1px solid blue;
+        @include desktop {
+            height: 90px;
+        }
+    }
 }
 
-// .mode-icon{
-//     display: block;
-//     width: 2rem;
-//     margin: 1rem;
-//     &--hidden{
-//         display: none;
-//     }
-// }
+.text-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    &__bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $indigo;
+        margin-right: .5rem;
+    }
+}
 
+.home-button{
+    background-color: $yellow;
+    padding: .75rem 2rem;
+    margin: 0 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+}

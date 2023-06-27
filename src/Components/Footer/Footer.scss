@@ -1,0 +1,31 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $indigo;
+    margin: 0;
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 1rem;
+    @include desktop {
+        width: 50%;
+    }
+    }
+    &__text{
+        color: white;
+        font-size: .85rem;
+        margin: 0;
+        &--mini{
+            font-size: .75rem;
+        }
+    }
+}

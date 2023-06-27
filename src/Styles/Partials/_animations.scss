@@ -31,14 +31,36 @@
 
   @keyframes blink {
     0%   {
+        opacity: 0%;
     }
     
+    20%  {
+        opacity: 20%;
+    }
+    30%  {
+        opacity: 30%;
+    }
+    40%  {
+        opacity: 40%;
+    }
     50%  {
-        color: white;
+        opacity: 50%;
     }
-    
-    100% {
-    
+    60%  {
+        opacity: 60%;
     }
+    70%  {
+        opacity: 70%;
+    }
+    80%  {
+        opacity: 80%;
+    }
+    90%  {
+        opacity: 90%;
+    }
+    100%  {
+        opacity: 100%;
+    }
+  
     
   }
