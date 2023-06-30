@@ -8,7 +8,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $indigo;
+    color: black;
+    border-top: 3px solid $indigo;
+    padding-top: 1rem;
     margin: 0;
     &__row{
         display: flex;
@@ -21,7 +23,7 @@
     }
     }
     &__text{
-        color: white;
+        // color: white;
         font-size: .85rem;
         margin: 0;
         &--mini{

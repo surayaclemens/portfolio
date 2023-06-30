@@ -62,7 +62,7 @@ function HomePage (isDarkMode) {
 
                 {/* BACKGROUND */}
                 <section className='home__section'>
-                    <h3 className='home__subheader'>Background</h3>
+                    <h3 className='home__subheader'>Long story short</h3>
                     <p className='home__body'>Although always a fan of gadgets and tech, it wasn’t until I realized I could combine that fascination with other core passions that I considered a career in software development.</p>
                     <div className='value-row'>
                       <img src={creativityBall} className='value-row__ball'/>
@@ -90,11 +90,24 @@ function HomePage (isDarkMode) {
                     <p className='home__body home__body--small'>Brainstation | Vancouver, BC</p>
                 </section>
 
+                {/* SKILLS */}
+                <section className='home__section'>
+                    <h3 className='home__subheader'>MY BEST SKILLS</h3>
+                      <p className='home__body home__body'>Angular, React, JavaScript, TypeScript, HTML, CSS/SCSS, Node.js, Firebase, Figma, Jira, communication, copywriting, public speaking</p>
+                </section>
+
+                {/* LEARNING */}
+                <section className='home__section'>
+                    <h3 className='home__subheader'>SOME EXPERIENCE WITH</h3>
+                      <p className='home__body home__body'>Next.js, SQL, Flutter, Dart, UX research, prototyping</p>
+                </section>
+                
+
                 {/* TLDR */}
                 <section className='home__section'>
                     <h3 className='home__subheader'>TL;DR</h3>
                     <p className='home__body'>
-                    My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of jokes in the workplace. My friends know me as a language dork, lover of textiles, and gal who really likes to swim. Let's make something great together :~)</p>
+                    I excel at front-end development, relish opportunities to expand my stack, and thrive in environments that are value-driven. My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of jokes in the workplace. My friends know me as a language dork, lover of textiles, and gal who really likes to swim. Let's make something great together :~)</p>
                 </section>
                 <section className='home__section'>
                   <button className='home-button'>See my work</button>

@@ -17,11 +17,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 90vh;
     }
 
     &__hero{
         animation: blink 2.5s ease-in forwards;
+        width: 85%;
+        @include desktop{
+            width: 50%;
+        }
     }
 
     &__main-content{
@@ -91,10 +95,14 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    margin: 1rem 0;
+    @include desktop{
     margin: 2rem 0;
 
+    }
+
     &__ball{
-        height: 50px;
+        height: 58px;
         // border: 1px solid blue;
         @include desktop {
             height: 90px;
@@ -118,11 +126,11 @@
 
 .home-button{
     background-color: $yellow;
-    padding: .75rem 2rem;
+    padding: 1rem 3rem;
     margin: 0 2rem;
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.25rem;
     border-radius: 20px;
     border: none;
     cursor: pointer;

@@ -16,13 +16,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    position: absolute;
-    top: .8rem;
-    right: .35rem;
+    position: sticky;
+    bottom: 4rem;
     z-index: 3;
+    // border: 1px solid red;
     @include desktop {
-        top: 1.2rem;
-        right: .5rem;
+        bottom: 2rem;
     }
 }
 
@@ -31,6 +30,10 @@
     display: block;
     width: 1.5rem;
     margin: 0 1rem;
+    @include desktop{
+        width: 2rem;
+        margin: 0 2rem;
+    }
     &--hidden{
         display: none;
     }
