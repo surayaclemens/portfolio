@@ -2,3 +2,37 @@
 @use '../../Styles/global' as *;
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/animations' as *;
+
+.main{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5% 0;
+        padding: 0rem 1.5rem;
+        @include tablet {
+            padding: 0% 20%;
+        }
+    }
+    &__subheader{
+        font-size: .78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__text{
+        margin: .5rem 0;
+    }
+    &__link{
+        font-weight: 600;
+        &--blue{
+            color: $blue;
+        }
+        &--red{
+            color: $red;
+        }
+        &--orange{
+            color: $orange;
+        }
+
+    }
+}

@@ -5,11 +5,11 @@
 
 .top-nav{
     // border: 1px solid red;
+    padding: 1rem 0;
 
     @include desktop{
         display: flex;
         justify-content: flex-end;
-
     }
     
     &__row{
@@ -29,4 +29,7 @@
     padding: .5rem;
     color: black;
     cursor: pointer;
+    &:hover{
+        font-weight: 700;
+    }
 }

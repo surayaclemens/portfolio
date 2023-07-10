@@ -39,13 +39,13 @@ function HomePage (isDarkMode) {
   }
 
 
-  document.title="Suraya Clemens - Web Developer"
+  document.title="Suraya Clemens | Web Developer"
     return (
       <div className='home'>
-        <TopNav />
-            <header className='home__header-box'>
+        {/* <TopNav /> */}
+            <div className='home__header-box'>
               <img className='home__hero' src={helloWorld}/>
-            </header>
+            </div>
 
             <main className='home__main-content'>
                 {/* INTRO SECTION */}
@@ -92,14 +92,8 @@ function HomePage (isDarkMode) {
 
                 {/* SKILLS */}
                 <section className='home__section'>
-                    <h3 className='home__subheader'>MY BEST SKILLS</h3>
-                      <p className='home__body home__body'>Angular, React, JavaScript, TypeScript, HTML, CSS/SCSS, Node.js, Firebase, Figma, Jira, communication, copywriting, public speaking</p>
-                </section>
-
-                {/* LEARNING */}
-                <section className='home__section'>
-                    <h3 className='home__subheader'>SOME EXPERIENCE WITH</h3>
-                      <p className='home__body home__body'>Next.js, SQL, Flutter, Dart, UX research, prototyping</p>
+                    <h3 className='home__subheader'>SKILLS</h3>
+                      <p className='home__body home__body'>Angular, React, JavaScript, TypeScript, HTML, CSS/SCSS, Node.js, Firebase, Figma, Jira, copywriting, copyediting, public speaking, Next.js, SQL, Flutter, Dart, UX research, prototyping</p>
                 </section>
                 
 
@@ -107,10 +101,12 @@ function HomePage (isDarkMode) {
                 <section className='home__section'>
                     <h3 className='home__subheader'>TL;DR</h3>
                     <p className='home__body'>
-                    I excel at front-end development, relish opportunities to expand my stack, and thrive in environments that are value-driven. My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of jokes in the workplace. My friends know me as a language dork, lover of textiles, and gal who really likes to swim. Let's make something great together :~)</p>
+                    I excel at front-end development, relish opportunities to learn new skills, and thrive in environments that are values-driven. My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of jokes in the workplace. My friends know me as a language dork, lover of textiles, and gal who really likes to swim. Let's make something great together :~)</p>
                 </section>
                 <section className='home__section'>
-                  <button className='home-button'>See my work</button>
+                  <NavLink className='home-button'to='/mywork'>
+                    <button className='home-button__button'>Check out my work</button>
+                  </NavLink>
                 </section>
 
                 {/* THINGS I BUILT */}

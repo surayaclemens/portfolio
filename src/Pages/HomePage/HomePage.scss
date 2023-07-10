@@ -29,7 +29,7 @@
     }
 
     &__main-content{
-        margin: 0rem 1.5rem;
+        padding: 0rem 1.5rem;
         @include tablet {
             padding: 0% 22%;
         }
@@ -125,15 +125,23 @@
 }
 
 .home-button{
-    background-color: $yellow;
-    padding: 1rem 3rem;
-    margin: 0 2rem;
-    color: white;
-    font-weight: 600;
-    font-size: 1.25rem;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+    width: 100%;
     display: flex;
-    align-self: center;
+    justify-content: center;
+    &__button{
+        background-color: $indigo;
+        padding: 1rem 3rem;
+        margin: 0 2rem;
+        color: white;
+        // font-weight: 600;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        &:hover{
+            background-color: $yellow;
+        }
+    }
 }
