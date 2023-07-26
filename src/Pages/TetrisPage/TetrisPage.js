@@ -5,7 +5,6 @@ import Header from '../../Components/Header/Header';
 import React from 'react';
 // import TetrisHome from '../../Assets/tetrisHome.png';
 // import TetrisGame from '../../Assets/tetrisGame.png';
-import TetrisDemo from '../../Assets/AJT-demo-no-audio.mov';
 
 class TetrisPage extends Component {
 
@@ -24,13 +23,6 @@ class TetrisPage extends Component {
                 <h2 className='tetris__body'><span className='tetris__body--blue'>This </span>tetris-inspired language game for ʔayʔaǰuθəm learners</h2>
                 <h3 className='tetris__subheader'>Immense gratitude to the K’ómoks First Nation for sharing their language and Dr. Suzanne Urbanczyk for connecting us</h3>
                 <h3 className='tetris__subheader'>Version 1 below. Version 2 coming soon!</h3>
-
-                <video 
-                  className='tetris__video' 
-                  src={TetrisDemo}
-                  autoPlay={true}
-                  loop={true}
-                />
 
                 <h3 className='tetris__subheader'>Built with Javascript, React, SCSS, Node.js, SQL</h3>
                 <h3 className='tetris__subheader'>This was the final project of my web development diploma, completed within a two-week sprint</h3>

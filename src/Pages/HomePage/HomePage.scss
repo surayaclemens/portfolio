@@ -59,23 +59,27 @@
         @include desktop {
             font-size: 1.13rem;
         }
-        &--red{
-            color: $red;
+        &--indigo{
+            color: $indigo;
         }
         &--blue{
             color: $blue; 
         }
-        &--indigo{
-            color: $indigo;
+        &--red{
+            color: $red;
         }
         &--orange{
             color: $orange;
         }
+        &--yellow{
+            color: $yellow;
+        }
         &--bold{
-            font-weight: 600;
+            font-weight: 700;
         }
         &--italic{
             font-style: italic;
+            font-weight: 600;
         }
         &--link{
             cursor: pointer;

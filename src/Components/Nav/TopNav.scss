@@ -27,9 +27,21 @@
 .top-link{
     margin: .5rem;
     padding: .5rem;
-    color: black;
+    color: rgb(60, 60, 60);
     cursor: pointer;
+    &:visited{
+        color: rgb(60, 60, 60);
+    }
     &:hover{
+        color: $yellow;
+    }
+    &--active{
         font-weight: 700;
+    }
+    &--dark{
+        color: white;
+        &:visited{
+            color: white;
+        }
     }
 }

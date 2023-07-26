@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Component } from 'react';
 import Header from '../../Components/Header/Header';
 import React from 'react';
-import CoffeeShopDemo from '../../Assets/coffeeshop-demo.mov';
 
 class CoffeeShopPage extends Component {
 
@@ -21,12 +20,7 @@ class CoffeeShopPage extends Component {
 
                 <h2 className='coffee-shop__body'><span className='coffee-shop__body--blue'>This </span>coffee shop marketing site</h2>
 
-                <video 
-                  className='coffee-shop__video' 
-                  src={CoffeeShopDemo}
-                  autoPlay={true}
-                  loop={true}
-                />
+             
 
                 <h3 className='coffee-shop__subheader'> Built with vanilla HTML & CSS</h3>
                 <h3 className='page__subheader'>April 2022</h3>

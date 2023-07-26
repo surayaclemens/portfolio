@@ -1,0 +1,36 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+.project{
+    &__title{
+
+    }
+
+}
+
+.section{
+    &__subtitle{
+
+    }
+    &__details{
+
+    }
+    &__image-carousel{
+        
+    }
+}
+
+
+   
+.contact-cta{
+    &__line-one{
+      
+    }
+    &__line-two{
+      
+    }
+
+}
+
