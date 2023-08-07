@@ -9,9 +9,12 @@
     align-items: center;
     justify-content: center;
     color: black;
-    border-top: 3px solid $indigo;
+    // border-top: 1px solid $indigo;
     padding-top: 1rem;
     margin: 0;
+    @include desktop {
+        padding-top: 3rem;
+    }
     &__row{
         display: flex;
         align-items: center;
@@ -29,5 +32,11 @@
         &--mini{
             font-size: .75rem;
         }
+    }
+}
+
+.footer__text a{
+    &:visited{
+        color: black;
     }
 }

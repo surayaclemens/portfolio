@@ -1,28 +1,40 @@
 import './ProjectTemplate.scss';
 
-function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDetails, featureDetails, featureImages, processDetails, moreDetails, moreImages}) {
-  document.title="project"
+
+function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDetails, featureDetails, featureImages, processDetails, toolDetails, moreDetails, moreImages}) {
+  
+  document.title=`${projectTitle}`
 
   return (
     <main className='project'>
-      <h1 className='project__title'>{projectTitle}</h1>
-      <img alt='render of project' src={projectImage}/>
-      <section className='section'>
-        <h3 className='section__subtitle'>Overview</h3>
-        <div className='section__details'>{overviewDetails}</div>
-      </section>
+      <div className='overview'>
+        <div className='overview__text'>
+          <h1 className='project__title'>{projectTitle}</h1>
+          <section className='section'>
+            <h3 className='section__subtitle'>Overview</h3>
+            <div className='section__details section__details--narrow'>{overviewDetails}</div>
+          </section>
+        </div>
+          <img className='project__hero-image'alt='render of project' src={projectImage}/>
+      </div>
       <section className='section'>
         <h3 className='section__subtitle'>My Role</h3>
         <div className='section__details'>{roleDetails}</div>
       </section>
       <section className='section'>
         <h3 className='section__subtitle'>Feature Highlight</h3>
+        <div className='section__image-carousel'>
+          {featureImages}
+        </div>
         <div className='section__details'>{featureDetails}</div>
-        <div className='section__image-carousel'>{featureImages}</div>
       </section>
       <section className='section'>
         <h3 className='section__subtitle'>The Process</h3>
         <div className='section__details'>{processDetails}</div>
+      </section>
+      <section className='section'>
+        <h3 className='section__subtitle'>Things This Project Taught Me</h3>
+        <div className='section__details'>{toolDetails}</div>
       </section>
       <section className='section'>
         <h3 className='section__subtitle'>See More</h3>
@@ -30,8 +42,8 @@ function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDeta
         <div className='section__image-carousel'>{moreImages}</div>
       </section>
       <section className='contact-cta'>
-        <h2 className='contact-cta__line-one'>Like what you see? Send me a note!</h2>
-        <h2 className='contact-cta__line-two'>surayaclemens@gmail.com</h2>
+        <h2 className='contact-cta__text'>Like what you see? Send me a note!</h2>
+        <h2 className='contact-cta__text contact-cta__text--color'>surayaclemens@gmail.com</h2>
       </section>
     
     </main>

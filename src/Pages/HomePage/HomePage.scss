@@ -30,9 +30,6 @@
 
     &__main-content{
         padding: 0rem 1.5rem;
-        @include tablet {
-            padding: 0% 22%;
-        }
     }
 
     &__section{
@@ -42,23 +39,21 @@
         align-items: flex-start;
         padding: 2rem 0;
         // background-color: #D9D9D93B;
-        @include desktop {
-            padding: 2rem 0;
+        @include tablet {
+            padding: 1% 22%;
         }
     }
 
     &__subheader{
-        font-size: .78rem;
         font-weight: 700;
         text-transform: uppercase;
+        margin: 0;
         }
    
 
     &__body{
         // margin: .7rem 0;
-        @include desktop {
-            font-size: 1.13rem;
-        }
+    
         &--indigo{
             color: $indigo;
         }
@@ -81,6 +76,7 @@
             font-style: italic;
             font-weight: 600;
         }
+
         &--link{
             cursor: pointer;
         }
@@ -100,16 +96,56 @@
     justify-content: space-evenly;
     width: 100%;
     margin: 1rem 0;
+
+    &--hidden{
+        display: none;
+    }
     @include desktop{
     margin: 2rem 0;
 
     }
 
     &__ball{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 58px;
-        // border: 1px solid blue;
+        width: 58px;
+        font-size: .7rem;
+        border-radius: 100%;
+        color: white;
         @include desktop {
             height: 90px;
+            width: 90px;
+            font-size: 1rem;
+        }
+        &--hidden{
+            display: none;
+        }
+        &--1{
+            background-color: $indigo;
+            animation: fallIntoPlace 2.5s .2s linear forwards, fadeIn 2.5s linear forwards;
+            // animation-delay: .2s;
+        }
+        &--2{
+            background-color: $blue;
+            animation: fallIntoPlace 2.5s .4s linear forwards, fadeIn 2.5s linear forwards;
+
+        }
+        &--3{
+            background-color: $red;
+            animation: fallIntoPlace 2.5s .6s linear forwards, fadeIn 2.5s linear forwards;
+
+        }
+        &--4{
+            background-color: $orange;
+            animation: fallIntoPlace 2.5s .8s linear forwards, fadeIn 2.5s linear forwards;
+
+        }
+        &--5{
+            background-color: $yellow;
+            animation: fallIntoPlace 2.5s 1s linear forwards, blink 2.5s linear forwards;
+
         }
     }
 }
@@ -134,16 +170,16 @@
     justify-content: center;
     &__button{
         background-color: $indigo;
+        width: 100%;
         padding: 1rem 3rem;
-        margin: 0 2rem;
+        margin: 2rem 0;
         color: white;
-        // font-weight: 600;
         font-size: 1rem;
-        border-radius: 10px;
-        border: none;
         cursor: pointer;
         display: flex;
         align-self: center;
+        justify-content: center;
+        border: none;
         &:hover{
             background-color: $yellow;
         }

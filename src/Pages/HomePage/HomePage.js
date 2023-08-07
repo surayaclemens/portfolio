@@ -2,14 +2,10 @@ import './HomePage.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect} from 'react';
 import helloWorld from '../../Assets/hello_world_logo.svg';
-import languageBall from '../../Assets/language_ball.svg';
-import educationBall from '../../Assets/education_ball.svg';
-import communityBall from '../../Assets/community_ball.svg';
-import creativityBall from '../../Assets/creativity_ball.svg';
-import techBall from '../../Assets/tech_ball.svg';
 import Modal from '../../Components/Modal/Modal';
 
 function HomePage () {
+
 
   const location = useLocation();
   useEffect(() => {
@@ -17,19 +13,12 @@ function HomePage () {
   }, [location]);
 
   // set initial state
-  const [modal, setModalState] = useState(false);
+  let [dropBalls, setBallState] = useState(false);
 
-  // show stack modal
-  const showModal = () => {
-    setModalState(true);
-    console.log('should show modal', modal)
-  };
-
-  // hide stack modal
-  const hideModal = () => {
-    setModalState(false);
-    console.log('should hide modal', modal)
-  };
+  const showValueBalls = () => {
+    setBallState(true);
+    console.log("Hey, thanks for opening the console! Hope you don't find any errors in here xo")
+  }
 
   document.title="Suraya Clemens | Web Developer"
     return (
@@ -44,27 +33,27 @@ function HomePage () {
                 <section className='home__section'>
                     <h3 className='home__subheader'>nice to meet you</h3>
                     <p className='home__body'>I'm Suraya 👋🏽 </p>
-                    <p className='home__body'>I'm a <span className="home__body--indigo">designer </span> and <span className="home__body--blue">full-stack web developer </span>based on the west coast of Canada, on the unceded lands of the xʷməθkʷəy̓əm, sḵwx̱wú7mesh, and səlilwətaɬ Nations.</p>
+                    <p className='home__body'>A <span className="home__body--indigo">designer </span> and <span className="home__body--blue">full-stack web developer </span>based on the west coast of Canada 🌊 on the unceded lands of the xʷməθkʷəy̓əm, sḵwx̱wú7mesh, and səlilwətaɬ Nations.</p>
                     <p className='home__body'>I see software development as a tool to combine my love of <span className="home__body--red animation-blink">creating cool things </span>with my responsibility to work towards a <span className="home__body--orange">more equitable future. </span></p>
-                    <p className='home__body'>And I can help you build an app that's both <span className="home__body--yellow home__body--italic">impressive </span>and <span className="home__body--yellow home__body--bold">impactful.</span></p>
+                    <p className='home__body'>And I can help you build an app that's both <span className="home__body--yellow">impressive </span>and <span className="home__body--yellow">impactful.</span></p>
                     {/* <NavLink to='/moreaboutme'>
                       <h3 className='home__body home__body--link'>Get to know me here</h3>
                     </NavLink> */}
                 </section>
 
                 {/* BACKGROUND */}
-                <section className='home__section'>
+                <section onMouseEnter={showValueBalls} className='home__section'>
                     <h3 className='home__subheader'>Long story short</h3>
-                    <p className='home__body'>I've always been a fan of gadgets and tech, but it wasn’t until I realized I could combine those little fascinations with other core passions that I considered a career in software.</p>
-                    <div className='value-row'>
-                      <img src={creativityBall} className='value-row__ball'/>
-                      <img src={educationBall} className='value-row__ball'/>
-                      <img src={techBall} className='value-row__ball'/>
-                      <img src={languageBall} className='value-row__ball'/>
-                      <img src={communityBall} className='value-row__ball'/>
+                    <p className='home__body'>I've always been a fan of gadgets and tech, but it wasn’t until I realized I could combine those interests with other core passions that I considered a career in software.</p>
+                    <div className={dropBalls? 'value-row' : 'value-row--hidden'}>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--1' : 'value-row__ball--hidden'}>creativity</div>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--2' : 'value-row__ball--hidden'}>education</div>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--3' : 'value-row__ball--hidden'}>tech</div>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--4' : 'value-row__ball--hidden'}>language</div>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--5' : 'value-row__ball--hidden'}>community</div>
                     </div>
-                    <p className='home__body'>I loved playing around with computers and code, but coming from a humanities background, I was anxious that a career in tech would feel void of meaning (read: make me an evil sellout). When I heard about some local research using AI and VR to support Indigenous Language Revitalization and it alllll came together in two major insights that seem incredibly obvious now: not all tech is Big Bad Tech, and programming is a skill that can be applied to any industry. And the further I get into the field, the more I see an exciting future rich in meaning and purpose, using technical skills for social good.</p>
-                    <p className='home__body'>Developing apps and websites (like this one!) is a challenging, fulfilling, and endlessly fun way for me to build a little more beauty into the world. Whether designing an intuitive interface, writing a sweet new script, or pursuing an exasperating bug, this work lights my brain up and I love that I get to make an impact for a living.</p>
+                    <p className='home__body'>I loved playing around with computers and code, but coming from a humanities background, I was anxious that going after a career in tech would feel void of meaning and make me a sellout. When I heard about some local research using AI and VR to support Indigenous Language Revitalization it alllll came together in two major insights that seem incredibly obvious now: not all tech is Big Bad Tech, and programming is a skill that can be applied to any industry. And the further I get into the field, the more I see an exciting future rich in meaning and purpose, using technical skills for social good.</p>
+                    <p className='home__body'>Developing apps and websites (like this one!) is a challenging, fulfilling, and endlessly fun way for me to build a little more beauty into the world 💐. Whether designing an intuitive interface, writing a cool new script, or pursuing an exasperating bug, this work lights my brain up and I love that I get to make an impact for a living.</p>
                 </section>
 
                 {/* EDUCATION */}
@@ -84,7 +73,7 @@ function HomePage () {
 
                 {/* SKILLS */}
                 <section className='home__section'>
-                    <h3 className='home__subheader'>SKILLS</h3>
+                    <h3 className='home__subheader'>Skills</h3>
                       <p className='home__body home__body'>Angular, React, JavaScript, TypeScript, HTML, CSS/SCSS, Node.js, Firebase, Flutter, Dart, Next.js, SQL, Figma, Jira, project management, wireframing, prototyping, UX research, copywriting, copyediting, public speaking</p>
                 </section>
                 
