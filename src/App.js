@@ -2,10 +2,11 @@ import './App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Component } from 'react';
 import HomePage from "./Pages/HomePage/HomePage";
-import TetrisPage from "./Pages/TetrisPage/TetrisPage";
+import MorphologyPage from "./Pages/MorphologyPage/MorphologyPage";
 import MyWorkPage from './Pages/MyWorkPage/MyWorkPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import CoffeeShopPage from './Pages/CoffeeShopPage/CoffeeShopPage';
+import OddRealmPage from './Pages/OddRealmPage/OddRealmPage';
 import CedulifyPage from './Pages/CedulifyPage/CedulifyPage';
 import AlatuliePage from './Pages/AlatuliePage/AlatuliePage';
 import { useState, useEffect } from 'react';
@@ -37,9 +38,10 @@ function App (){
           <TopNav isDarkMode={isDarkMode} />
           <Switch>
             <Route path="/" exact component={HomePage} isDarkMode={isDarkMode} />
-            <Route path="/morphology" component={TetrisPage} />
-            <Route path="/coffeeshop" component={CoffeeShopPage} />
+            <Route path="/morphology" component={MorphologyPage} />
+            {/* <Route path="/coffeeshop" component={CoffeeShopPage} /> */}
             <Route path="/alatulie" component={AlatuliePage} />
+            <Route path="/oddrealm" component={OddRealmPage} />
             <Route path="/cedulify" component={CedulifyPage} />
             <Route path="/mywork" component={MyWorkPage} />
             <Route path="/contact" component={ContactPage} />

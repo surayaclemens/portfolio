@@ -8,6 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    &__title{
+        color: $indigo;
+        align-self: center;
+        font-weight: 400;
+    }
 }
 
 .carousel{

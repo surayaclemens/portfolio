@@ -18,16 +18,13 @@ import cedulifyMore5 from '../../Assets/project-shots/cedulify/calendar-home.png
 import cedulifyMore6 from '../../Assets/project-shots/cedulify/journal-home.png';
 
 
-
-
-
 function CedulifyPage ({projectTitle}) {
   document.title=`${projectTitle}`
 
   return (
     <main className='cedulify'>
       <ProjectTemplate 
-        projectTitle={'Cedulify'}
+        projectTitle={<h1 className='cedulify__title'>Cedulify</h1>}
         projectImage={cedulifyHero}
         overviewDetails={<p className='section__details'>Cedulify is a mobile app that allows you to take charge of your life balance and life schedule through occupational science, positive psychology, and mindfulness. I'm currently the Front-end Lead and Project Coordinator on this startup’s team of 10.</p>}
         roleDetails={

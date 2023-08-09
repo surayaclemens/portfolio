@@ -19,7 +19,7 @@ function MyWorkPage () {
           <NavLink className="list__link "to="/morphology">Morphology</NavLink>
           <NavLink className="list__link "to="/oddrealm">Odd Realm</NavLink>
           <NavLink className="list__link "to="/alatulie">Alatúlie</NavLink>
-          <NavLink className="list__link "to="/coffeeshop">Coffee Shop</NavLink>
+          {/* <NavLink className="list__link "to="/coffeeshop">Coffee Shop</NavLink> */}
         </main>
       </div>
     );

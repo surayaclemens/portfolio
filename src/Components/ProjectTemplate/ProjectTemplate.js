@@ -3,13 +3,13 @@ import './ProjectTemplate.scss';
 
 function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDetails, featureDetails, featureImages, processDetails, toolDetails, moreDetails, moreImages}) {
   
-  document.title=`${projectTitle}`
+  document.title=`Project`
 
   return (
     <main className='project'>
       <div className='overview'>
         <div className='overview__text'>
-          <h1 className='project__title'>{projectTitle}</h1>
+          <div>{projectTitle}</div>
           <section className='section'>
             <h3 className='section__subtitle'>Overview</h3>
             <div className='section__details section__details--narrow'>{overviewDetails}</div>
