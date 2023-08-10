@@ -56,3 +56,41 @@ html {
   ul {
     padding: 0;
   }
+
+  .carousel{
+    display: flex;
+    padding: 1rem 0;
+    &__image{
+        width: 200px;
+        margin: 0 1rem;
+        &--shadow{
+            box-shadow: 3px 2px 8px 0px rgba(110, 110, 110, 0.15);
+        }
+        &:nth-child(1){
+            margin: 0;
+        }
+        @include tablet{
+            width: 250px;
+        }
+    }
+
+    &__wide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__wide-image{
+        width: 300px;
+        margin: 0 1rem;
+        @include desktop{
+            width: 350px;
+        }
+    }
+
+    &__double-image{
+      width: 50%;
+      margin: 0 1rem;
+  }
+}

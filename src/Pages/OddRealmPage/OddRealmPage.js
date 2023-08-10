@@ -59,10 +59,8 @@ function OddRealmPage ({projectTitle}) {
         moreImages={
           <div className='carousel'>
             <img className='carousel__image' alt=''src={oddrealmMore1}/>
-            {/* <img className='carousel__image' alt=''src={oddrealmMore2}/> */}
             <img className='carousel__image' alt=''src={oddrealmMore3}/>
             <div className='carousel__wide'>
-              {/* <img className='carousel__wide-image' alt=''src={oddrealmMore5}/> */}
               <img className='carousel__wide-image' alt=''src={oddrealmMore4}/>
             </div>
           </div>

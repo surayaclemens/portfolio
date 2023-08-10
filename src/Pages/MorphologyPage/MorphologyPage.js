@@ -66,10 +66,6 @@ function MorphologyPage ({projectTitle}) {
               <img className='carousel__wide-image' alt=''src={morphologyMore3}/>
               <img className='carousel__wide-image' alt=''src={morphologyMore4}/>
             </div>
-            {/* <img className='carousel__image' alt=''src={cedulifyMore3}/>
-            <img className='carousel__image' alt=''src={cedulifyMore4}/>
-            <img className='carousel__image' alt=''src={cedulifyMore6}/> */}
-
           </div>
         }
       />

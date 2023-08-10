@@ -85,7 +85,6 @@ function CedulifyPage ({projectTitle}) {
             <img className='carousel__image' alt=''src={cedulifyMore3}/>
             <img className='carousel__image' alt=''src={cedulifyMore4}/>
             <img className='carousel__image' alt=''src={cedulifyMore6}/>
-
           </div>
         }
       />

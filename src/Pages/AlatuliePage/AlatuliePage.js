@@ -69,7 +69,6 @@ function AlatuliePage ({projectTitle}) {
           <div className='carousel'>
             <img className='carousel__image' alt=''src={alatulieMore1}/>
             <img className='carousel__image' alt=''src={alatulieMore2}/>
-            {/* <img className='carousel__image' alt=''src={alatulieMore3}/> */}
             <div className='carousel__wide'>
               <img className='carousel__wide-image' alt=''src={alatulieMore4}/>
               <img className='carousel__wide-image' alt=''src={alatulieMore5}/>

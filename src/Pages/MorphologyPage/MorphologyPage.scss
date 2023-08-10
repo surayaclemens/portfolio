@@ -16,47 +16,11 @@
     }
 }
 
-.carousel{
-    display: flex;
-    padding: 1rem 0;
 
-    &__image{
-        width: 60%;
-        margin: 0 1rem;
-        &--shadow{
-            box-shadow: 3px 2px 8px 0px rgba(110, 110, 110, 0.15);
-        }
-        &:nth-child(1){
-            margin: 0;
-        }
-        
-        @include tablet{
-            width: 28%;
-        }
-        @include desktop{
-            width: 25%;
-        }
-    }
-
-    &__wide{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        // border: 1px solid green;
-    }
-    &__wide-image{
-        width: 85%;
-        margin: 0 1rem;
-    }
-   
-}
 
 a {
     color: $indigo;
     &:visited{
     color: $indigo;
-
-
     }
 }

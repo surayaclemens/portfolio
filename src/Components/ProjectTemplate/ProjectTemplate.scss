@@ -18,13 +18,13 @@
     }
     &__hero-image{
         align-self: center;
-        width: 85%;
+        width: 200px;
         @include tablet{
-            width: 50%;
+            width: 350px;
         }
-        @include desktop{
-            width: 35%;
-        }
+        // @include desktop{
+        //     width: 350px;
+        // }
     }
 
 }
@@ -45,8 +45,11 @@
 }
 
 .section{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 1rem 0;
+    // border: 2px solid purple;
     &__subtitle{
         text-transform: uppercase;
         font-weight: 700;
@@ -80,10 +83,13 @@
     }
     &__image-carousel{
         display: flex;
-        width: 100%;
+        width: 100vw;
         overflow: scroll;
         margin: 0;
-        // border: 1px solid red;
+        @include tablet{
+            width: 60vw;
+            // border: 1px solid green;
+        }
     }
 }
 
