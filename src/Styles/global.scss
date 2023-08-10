@@ -10,47 +10,87 @@ html {
   }
 
 
-  
   body {
     margin: 0;
-    font-family: "Inter";
-    color: rgb(60, 60, 60);
-  
+    font-family: 'Lato';
+    color: $textBody;
   }
 
 
   h1 {
     font-size: 3.125rem;
     @include tablet{
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
 
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    @include tablet{
-      font-size: 1.65rem;
-      line-height: 3rem;
-    }
   }
 
   h3 {
-    font-size: .75rem;
-    @include tablet{
-      font-size: 1rem;
-    }
+    font-size: .78rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    @include desktop {
+      font-size: 1.15rem;
+  }
+  }
+
+  li {
+    font-size: 1rem;
+    font-weight: 400;
+    @include desktop {
+      font-size: 1.15rem;
+  }
+
   }
 
   a {
     text-decoration: none;
-    // cursor: pointer;
-    &:visited{
-    color: rgb(60, 60, 60);
-    }
+    cursor: pointer;
   }
 
 
   ul {
     padding: 0;
   }
+
+  .carousel{
+    display: flex;
+    padding: 1rem 0;
+    &__image{
+        width: 200px;
+        margin: 0 1rem;
+        &--shadow{
+            box-shadow: 3px 2px 8px 0px rgba(110, 110, 110, 0.15);
+        }
+        &:nth-child(1){
+            margin: 0;
+        }
+        @include tablet{
+            width: 250px;
+        }
+    }
+
+    &__wide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__wide-image{
+        width: 300px;
+        margin: 0 1rem;
+        @include desktop{
+            width: 350px;
+        }
+    }
+
+    &__double-image{
+      width: 50%;
+      margin: 0 1rem;
+  }
+}

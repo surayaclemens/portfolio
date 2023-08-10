@@ -1,0 +1,17 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+
+
+.morphology{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__title{
+        color: $blue;
+        align-self: center;
+        font-weight: 400;
+    }
+}

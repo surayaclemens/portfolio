@@ -1,0 +1,97 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3% 10% 5% 10%;
+    @include desktop{
+        padding: 3% 18% 5% 18%;
+    }
+    @include large{
+        padding: 3% 20% 5% 20%;
+    }
+    &__hero-image{
+        align-self: center;
+        width: 200px;
+        @include tablet{
+            width: 350px;
+        }
+    }
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    @include desktop{
+        flex-direction: row;
+    }
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    &__subtitle{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__details{
+        line-height: 1.5rem;
+        &--narrow{
+            @include desktop{
+                width: 90%;
+            }
+            @include large{
+                width: 75%;
+            }
+        }
+    }
+    &__list{
+        margin-left: 1rem;
+        list-style: none;
+    }
+    &__list-item{
+        &::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: $indigo; /* Change the color */
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            width: 1rem; /* Also needed for space (tweak if needed) */
+            margin-left: -1rem; /* Also needed for space (tweak if needed) */
+          } 
+    }
+    &__image-carousel{
+        display: flex;
+        width: 80vw;
+        overflow: scroll;
+        margin: 0;
+        @include tablet{
+            width: 60vw;
+        }
+    }
+}
+
+   
+.contact-cta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__text{
+    font-weight: 400;
+    font-size: 1.25rem;
+        &--color{
+            color: $indigo;
+            font-weight: 600;
+        }
+    }
+}
+

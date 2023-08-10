@@ -31,14 +31,73 @@
 
   @keyframes blink {
     0%   {
+        opacity: 0%;
     }
     
+    20%  {
+        opacity: 20%;
+    }
+    30%  {
+        opacity: 30%;
+    }
+    40%  {
+        opacity: 40%;
+    }
     50%  {
-        color: white;
+        opacity: 50%;
     }
-    
+    60%  {
+        opacity: 60%;
+    }
+    70%  {
+        opacity: 70%;
+    }
+    80%  {
+        opacity: 80%;
+    }
+    90%  {
+        opacity: 90%;
+    }
+    100%  {
+        opacity: 100%;
+    }
+  
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    70%{
+        opacity: 50%;
+    }
+    90%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+  @keyframes fallIntoPlace {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    15%{
+        transform: translate(0px, -40px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    80%{
+        transform: translate(0px, -4px);
+    }
+
     100% {
-    
+        transform: translate(0px, 0px);
     }
     
   }

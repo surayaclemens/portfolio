@@ -1,0 +1,40 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    &__link{
+        font-size: 3.5rem;
+        color: $indigo;
+        margin: 3rem 0;
+        &:hover{
+            font-weight: 600;
+        }
+        &:nth-child(2){
+            color: $blue;
+        }
+        &:nth-child(3){
+            color: $red;
+        }
+        &:nth-child(4){
+            color: $orange;
+        }
+        &:nth-child(5){
+            color: $yellow;
+        }
+  
+
+    }
+}

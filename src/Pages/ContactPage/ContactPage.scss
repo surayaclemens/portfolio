@@ -1,0 +1,43 @@
+@use '../../Styles/Partials/colors' as *;
+@use '../../Styles/global' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/animations' as *;
+
+.main{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5% 0;
+        padding: 0rem 1.5rem;
+        height: 70vh;
+        @include tablet {
+            padding: 0% 20%;
+            height: 50vh;
+        }
+    }
+    &__subheader{
+        font-size: .78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__text{
+        margin: .5rem 0;
+    }
+    &__link{
+        font-weight: 600;
+        cursor: pointer;
+        &--indigo{
+            color: $indigo;
+        }
+        &--blue{
+            color: $blue;
+        }
+        &--red{
+            color: $red;
+        }
+        &--orange{
+            color: $orange;
+        }
+    }
+}
