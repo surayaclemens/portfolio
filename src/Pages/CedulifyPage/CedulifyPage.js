@@ -10,6 +10,8 @@ import cedulifyFeature6 from '../../Assets/project-shots/cedulify/journal6.png';
 import cedulifyFeature7 from '../../Assets/project-shots/cedulify/journal7.png';
 import cedulifyFeature8 from '../../Assets/project-shots/cedulify/journal8.png';
 import cedulifyFeature9 from '../../Assets/project-shots/cedulify/journal9.png';
+import cedulifyFeature10 from '../../Assets/project-shots/cedulify/journal10.png';
+import cedulifyFeature11 from '../../Assets/project-shots/cedulify/journal11.png';
 import cedulifyMore1 from '../../Assets/project-shots/cedulify/verifyEmail.png';
 import cedulifyMore2 from '../../Assets/project-shots/cedulify/notVerified.png';
 import cedulifyMore3 from '../../Assets/project-shots/cedulify/profile.png';
@@ -38,7 +40,7 @@ function CedulifyPage ({projectTitle}) {
           </ul>
         }
         featureDetails={
-        <p className='section__details'>This flow answers the question: How might we encourage users to deeply reflect and find meaning in their day-to-day activities? With a calculated date selector, short journal-style prompts, and a celebratory animation at the end, this Weekly Reflection feature offers users a clean balance of guidance, ease, invitation, and freedom.</p>
+        <p className='section__details'>This flow answers the question: How might we encourage users to consistently reflect and find the meaning in their day-to-day activities? With a date tracker, bullet journal style prompts, and a celebratory animation at the end, this Daily Check-in feature offers users a clean balance of guidance, ease, invitation, and freedom.</p>
         }
         featureImages={
           <div className='carousel'>
@@ -51,6 +53,9 @@ function CedulifyPage ({projectTitle}) {
             <img className='carousel__image carousel__image--shadow' alt='screenshot of weekly journal feature'src={cedulifyFeature7}/>
             <img className='carousel__image carousel__image--shadow' alt='screenshot of weekly journal feature'src={cedulifyFeature8}/>
             <img className='carousel__image carousel__image--shadow' alt='screenshot of weekly journal feature'src={cedulifyFeature9}/>
+            <img className='carousel__image carousel__image--shadow' alt='screenshot of weekly journal feature'src={cedulifyFeature10}/>
+            <img className='carousel__image carousel__image--shadow' alt='screenshot of weekly journal feature'src={cedulifyFeature11}/>
+
           </div>
       }
       processDetails={
