@@ -21,13 +21,13 @@ function ContactPage () {
           <p className='main__text'>Here's my email
             <span className='main__link main__link--blue' onClick={copyToClipboard}> surayaclemens@gmail.com</span>
           </p>
-          <p className='main__text'>Or if you're more of a linkedin person I'm at
-            <span className='main__link main__link--red'> linkedin/surayaclemens
-            </span>
+          <p className='main__text'>Or if you're more of a LinkedIn person, I'm at
+            <a href="https://www.linkedin.com/in/suraya-clemens/" target='_blank' className='main__link main__link--red'> linkedin/suraya-clemens
+            </a>
           </p>
           <p className='main__text'>You can also lurk my commits on
-            <span className='main__link main__link--orange'> github/surayaclemens
-            </span>
+            <a href="https://github.com/surayaclemens" target='_blank' className='main__link main__link--orange'> github/surayaclemens
+            </a>
           </p>
           <p className='main__text'>Or size me up old-school with my
             <span>
