@@ -46,7 +46,7 @@ function App (){
             <Route path="/mywork" component={MyWorkPage} />
             <Route path="/contact" component={ContactPage} />
           </Switch> 
-          <Footer/>
+          <Footer isDarkMode={isDarkMode}/>
         </BrowserRouter>
         <div className='mode-box'>
           <img

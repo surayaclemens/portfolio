@@ -1,7 +1,6 @@
 import './TopNav.scss';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import { Component } from 'react';
 
 
 function TopNav ({isDarkMode}){

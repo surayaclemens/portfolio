@@ -14,7 +14,6 @@
     }
     @include large{
         padding: 3% 20% 5% 20%;
-
     }
     &__hero-image{
         align-self: center;
@@ -22,11 +21,7 @@
         @include tablet{
             width: 350px;
         }
-        // @include desktop{
-        //     width: 350px;
-        // }
     }
-
 }
 
 .overview{
@@ -34,14 +29,7 @@
     flex-direction: column;
     @include desktop{
         flex-direction: row;
-        // width: 90%;
-        // border: 1px solid purple;
     }
-    &__text{
-        // border: 1px solid purple;
-
-    }
-
 }
 
 .section{
@@ -49,14 +37,12 @@
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
-    // border: 2px solid purple;
     &__subtitle{
         text-transform: uppercase;
         font-weight: 700;
     }
     &__details{
         line-height: 1.5rem;
-
         &--narrow{
             @include desktop{
                 width: 90%;
@@ -65,12 +51,10 @@
                 width: 75%;
             }
         }
-
     }
     &__list{
         margin-left: 1rem;
         list-style: none;
-
     }
     &__list-item{
         &::before {
@@ -83,12 +67,11 @@
     }
     &__image-carousel{
         display: flex;
-        width: 100vw;
+        width: 80vw;
         overflow: scroll;
         margin: 0;
         @include tablet{
             width: 60vw;
-            // border: 1px solid green;
         }
     }
 }
@@ -109,10 +92,6 @@
             color: $indigo;
             font-weight: 600;
         }
-
-      
     }
- 
-
 }
 

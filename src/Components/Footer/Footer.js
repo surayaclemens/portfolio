@@ -2,17 +2,17 @@ import './Footer.scss';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 
-function Footer ({text}){
+function Footer ({isDarkMode}){
 
     return (
 
         <main className='footer'>
             <div className='footer__row'>
-                <p className='footer__text'><NavLink to='/'>Home</NavLink></p>
-                <p className='footer__text'><NavLink to='/mywork'>My Work</NavLink></p>
-                <p className='footer__text'><NavLink to='/contact'>Contact</NavLink></p>
+                <NavLink to='/' exact className={!isDarkMode ? 'footer__text' : 'footer__text footer__text--dark'}>Home</NavLink>
+                <NavLink to='/mywork'  className={!isDarkMode ? 'footer__text' : 'footer__text footer__text--dark'}>My Work</NavLink>
+                <NavLink to='/contact'  className={!isDarkMode ? 'footer__text' : 'footer__text footer__text--dark'}>Contact</NavLink>
             </div>
-            <p className='footer__text footer__text--mini'>© Suraya Clemens 2023</p>
+            <p className={!isDarkMode ? 'footer__text footer__text--mini' : 'footer__text footer__text--mini footer__text--dark'}>© Suraya Clemens 2023</p>
         </main>
 
     );
