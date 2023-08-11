@@ -1,25 +1,13 @@
 import './Modal.scss';
-import CloseX from '../../Assets/yellow-close-x.svg';
 
 import React from 'react';
 
-function Modal ({ modal, hideStackModal, isDarkMode }){
+function Modal ({ tags }){
         
     return (
-
-        <main className={modal ? 'modal' : 'modal--hidden'}>
-            <div className='modal__x-wrap'>
-                <img className='modal__x' src={CloseX} onClick={hideStackModal}/>
-            </div>
-
-            <h3 className='modal__subheader'>I'm comfortable developing with</h3>
-            <p className='modal__text'>HTML, CSS, SCSS, JavaScript, TypeScript, Angular, React, Node.js, Firebase, Git</p>
-            <h3 className='modal__subheader'>and have experience with</h3>
-            <p className='modal__text'>Flutter, Dart, SQL, GCP, AWS, Heroku, Docker, Meta Conversions API, Stripe API, RxJs</p>
-            <h3 className='modal__subheader'>also a big fan of using</h3>
-            <p className='modal__text'>GitHub, Figma, Notion, Agile development methods</p>
+        <main className='modal'>
+            <h3 className='modal__subheader'>{tags}</h3>
         </main>
-
     );
 }
 

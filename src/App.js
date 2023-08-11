@@ -5,7 +5,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import MorphologyPage from "./Pages/MorphologyPage/MorphologyPage";
 import MyWorkPage from './Pages/MyWorkPage/MyWorkPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
-import CoffeeShopPage from './Pages/CoffeeShopPage/CoffeeShopPage';
+// import CoffeeShopPage from './Pages/CoffeeShopPage/CoffeeShopPage';
 import OddRealmPage from './Pages/OddRealmPage/OddRealmPage';
 import CedulifyPage from './Pages/CedulifyPage/CedulifyPage';
 import AlatuliePage from './Pages/AlatuliePage/AlatuliePage';
@@ -14,6 +14,7 @@ import sunIcon from './Assets/sun-icon.png';
 import moonIcon from './Assets/moon-icon.png';
 import Footer from './Components/Footer/Footer';
 import TopNav from './Components/Nav/TopNav';
+import VanBrosPage from './Pages/VanBrosPage/VanBrosPage';
 
 function App (){
 
@@ -39,7 +40,7 @@ function App (){
           <Switch>
             <Route path="/" exact component={HomePage} isDarkMode={isDarkMode} />
             <Route path="/morphology" component={MorphologyPage} />
-            {/* <Route path="/coffeeshop" component={CoffeeShopPage} /> */}
+            <Route path="/vanbros" component={VanBrosPage} />
             <Route path="/alatulie" component={AlatuliePage} />
             <Route path="/oddrealm" component={OddRealmPage} />
             <Route path="/cedulify" component={CedulifyPage} />
