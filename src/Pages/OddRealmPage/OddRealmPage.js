@@ -23,7 +23,7 @@ function OddRealmPage ({projectTitle}) {
             <li className='section__list-item'>UX and UI design, brand cohesion</li>
             <li className='section__list-item'>Understand stakeholder needs, iterate based on feedback</li>
             <li className='section__list-item'>Optimize information architecture</li>
-            <li className='section__list-item'>Migrate previous newsletter subscribers to integrated CMS</li>
+            <li className='section__list-item'>Migrate previous newsletter subscribers to integrated CRM</li>
             <li className='section__list-item'>Web development with Next.js and Tailwind</li>
           </ul>
         }
@@ -38,20 +38,19 @@ function OddRealmPage ({projectTitle}) {
         }
       processDetails={
         <ul className='section__list'>
-          <li className='section__list-item'>Identify needs from learners</li>
-          <li className='section__list-item'>Wireframe user flow, draft UX copy</li>
-          <li className='section__list-item'>Brand design, iconography, hi-fi mockups</li>
-          <li className='section__list-item'>Database design and planning, setup in Firebase</li>
-          <li className='section__list-item'>Development and design iteration</li>
+          <li className='section__list-item'>Identify needs from stakeholders</li>
+          <li className='section__list-item'>Map out current information architecture, iterate on improvements</li>
+          <li className='section__list-item'>Design ideation, presentation, feedback, iteration</li>
+          <li className='section__list-item'>Project setup for internationalization & localization</li>
+          <li className='section__list-item'>Build with Next.js and Tailwind</li>
           <li className='section__list-item'>Testing, bug fixes, deployment</li>
-          <li className='section__list-item'>Continued improvements and updates</li>
         </ul>
       }
       toolDetails={
       <ul className='section__list'>
         <li className='section__list-item'>Next.js, tailwind</li>
         <li className='section__list-item'>Collaboration with game devs</li>
-        <li className='section__list-item'>Problem solving for CMS integration</li>
+        <li className='section__list-item'>Problem solving for CRM integration</li>
       </ul>}
         moreDetails={
           <p className='section__details'>This project is currently under development - no live links yet! In the meantime, check out the game <a href='https://store.steampowered.com/app/688060/Odd_Realm/'>on Steam</a>.</p>
