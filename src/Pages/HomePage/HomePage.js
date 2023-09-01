@@ -46,11 +46,12 @@ function HomePage () {
                       <div className={dropBalls ? 'value-row__ball value-row__ball--1' : 'value-row__ball--hidden'}>creativity</div>
                       <div className={dropBalls ? 'value-row__ball value-row__ball--2' : 'value-row__ball--hidden'}>education</div>
                       <div className={dropBalls ? 'value-row__ball value-row__ball--3' : 'value-row__ball--hidden'}>tech</div>
-                      <div className={dropBalls ? 'value-row__ball value-row__ball--4' : 'value-row__ball--hidden'}>language</div>
+                      <div className={dropBalls ? 'value-row__ball value-row__ball--4' : 'value-row__ball--hidden'}>diversity</div>
                       <div className={dropBalls ? 'value-row__ball value-row__ball--5' : 'value-row__ball--hidden'}>community</div>
                     </div>
-                    <p className='home__body'>I loved playing around with computers and code, but coming from a humanities background, I was anxious that going after a career in tech would feel void of meaning and make me a sellout. When I heard about some local research using AI and VR to support Indigenous Language Revitalization it alllll came together in two major insights that seem incredibly obvious now: not all tech is Big Bad Tech, and programming is a skill that can be applied to any industry. And the further I get into the field, the more I see an exciting future rich in meaning and purpose, using technical skills for social good.</p>
-                    <p className='home__body'>Developing apps and websites (like this one!) is a challenging, fulfilling, and endlessly fun way for me to build a little more beauty into the world 💐. Whether designing an intuitive interface, writing a cool new script, or pursuing an exasperating bug, this work lights my brain up and I love that I get to make an impact for a living.</p>
+                    <p className='home__body'>As a developer I get to be creative, constantly (!!) learn, explore diverse industries, and be part of an innovative and enthusiastic community. It checks all the boxes. Developing apps and websites like this one is a challenging, fulfilling, and endlessly fun way for me to build a little more beauty into the world 💐 Whether designing an intuitive interface, writing a handy new script, or pursuing a stubborn bug, this work lights my brain up and I love that I get to make an impact for a living.</p>
+                    
+                    {/* <p>I loved playing around with computers and code, but a career as an "engineer"? That felt way out of reach. When I heard about some local research using AI and VR to support Indigenous Language Revitalization it alllll came together in two major insights that seem incredibly obvious now: not all tech is Big Bad Tech, and programming is a skill that can be applied to any industry. And the further I get into the field, the more I see an exciting future rich in meaning and purpose, using technical skills for social good.</p> */}
                 </section>
 
                 {/* EDUCATION */}

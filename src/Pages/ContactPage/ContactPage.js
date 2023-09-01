@@ -25,11 +25,11 @@ function ContactPage () {
             <a href="https://www.linkedin.com/in/suraya-clemens/" target='_blank' className='main__link main__link--red'> linkedin/suraya-clemens
             </a>
           </p>
-          <p className='main__text'>You can also lurk my commits on
+          <p className='main__text'>You can also check out my commits on
             <a href="https://github.com/surayaclemens" target='_blank' className='main__link main__link--orange'> github/surayaclemens
             </a>
           </p>
-          <p className='main__text'>Or size me up old-school with my
+          <p className='main__text'>Or get all the professional deets from my
             <span>
               <a className='main__link main__link--indigo' href={resume} target="_blank" rel="noopener noreferrer"> resume</a>
             </span>

@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Component } from 'react';
 import HomePage from "./Pages/HomePage/HomePage";
 import MorphologyPage from "./Pages/MorphologyPage/MorphologyPage";
@@ -38,7 +38,16 @@ function App (){
         <BrowserRouter>
           <TopNav isDarkMode={isDarkMode} />
           <Switch>
-            <Route path="/" exact component={HomePage} isDarkMode={isDarkMode} />
+              {/* Redirect HTTP to HTTPS */}
+            <Route path="/" 
+              exact component={HomePage} 
+              isDarkMode={isDarkMode} 
+              render={({ location }) =>
+                location.protocol === 'http:'
+                  ? <Redirect to={{ ...location, protocol: 'https:' }} />
+                  : null
+              }
+            />
             <Route path="/morphology" component={MorphologyPage} />
             <Route path="/vanbros" component={VanBrosPage} />
             <Route path="/alatulie" component={AlatuliePage} />

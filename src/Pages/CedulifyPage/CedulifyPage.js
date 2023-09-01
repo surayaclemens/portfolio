@@ -28,15 +28,15 @@ function CedulifyPage ({projectTitle}) {
       <ProjectTemplate 
         projectTitle={<h1 className='cedulify__title'>Cedulify</h1>}
         projectImage={cedulifyHero}
-        overviewDetails={<p className='section__details'>Cedulify is a mobile app that allows you to take charge of your life balance and life schedule through occupational science, positive psychology, and mindfulness. I'm currently the Front-end Lead and Project Coordinator on this startup’s team of 10.</p>}
+        overviewDetails={<p className='section__details'>Cedulify is a mobile app that allows you to take charge of your life balance and life schedule through occupational science, positive psychology, and mindfulness. I'm currently a full-stack developer on this startup's team of 10.</p>}
         roleDetails={
           <ul className='section__list'>
             <li className='section__list-item'>Oversee client side of the app</li>
             <li className='section__list-item'>Collaborate with UX/UI team on design</li>
-            <li className='section__list-item'>Mobile development in Flutter + Dart</li>
-            <li className='section__list-item'>Web development in Angular + Node.js</li>
+            <li className='section__list-item'>Web development with Angular, Node.js, SCSS</li>
+            <li className='section__list-item'>Mobile development with Flutter, Dart, Material UI</li>
             <li className='section__list-item'>Copywriting and editing</li>
-            <li className='section__list-item'>Manage and facilitate Agile workflow</li>
+            <li className='section__list-item'>Coordinate Agile workflow</li>
           </ul>
         }
         featureDetails={

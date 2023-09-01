@@ -180,8 +180,6 @@
         align-self: center;
         justify-content: center;
         border: none;
-        &:hover{
-            background-color: $yellow;
-        }
+        animation: colorChange 3s infinite;
     }
 }

@@ -5,6 +5,14 @@ function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDeta
   
   document.title=`Project`
 
+  const copyToClipboard = () => {
+    console.log('copy to clipboard')
+    navigator.clipboard.writeText('surayaclemens@gmail.com');
+    setTimeout(() => {
+      alert('📧 📬 💌 Email copied to clipboard! 📧 📬 💌');
+    }, 100);
+  };
+
   return (
     <main className='project'>
       <div className='overview'>
@@ -43,7 +51,7 @@ function ProjectTemplate ({projectTitle, projectImage, overviewDetails, roleDeta
       </section>
       <section className='contact-cta'>
         <h2 className='contact-cta__text'>Like what you see? Send me a note!</h2>
-        <h2 className='contact-cta__text contact-cta__text--color'>surayaclemens@gmail.com</h2>
+        <h2 className='contact-cta__text contact-cta__text--color' onClick={copyToClipboard}>surayaclemens@gmail.com</h2>
       </section>
     
     </main>
