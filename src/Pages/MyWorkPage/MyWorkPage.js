@@ -47,11 +47,11 @@ function MyWorkPage () {
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('morphology')} onMouseLeave={() => handleMouseLeave('morphology')} className="list__link "to="/morphology">
             Morphology
-            {modalOpen.morphology && <Modal tags="web, next.js, firebase, design, linguistics"/>}
+            {modalOpen.morphology && <Modal tags="web, react, node.js, firebase, design, linguistics"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('oddrealm')} onMouseLeave={() => handleMouseLeave('oddrealm')} className="list__link "to="/oddrealm">
             Odd Realm
-            {modalOpen.oddrealm && <Modal tags="web, next.js, tailwind, design, marketing site"/>}
+            {modalOpen.oddrealm && <Modal tags="web, react, node.js, tailwind, design, marketing site"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('alatulie')} onMouseLeave={() => handleMouseLeave('alatulie')} className="list__link "to="/alatulie">
             Alatúlie

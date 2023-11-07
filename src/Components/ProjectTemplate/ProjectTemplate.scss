@@ -10,16 +10,16 @@
     justify-content: flex-start;
     padding: 3% 10% 5% 10%;
     @include desktop{
-        padding: 3% 18% 5% 18%;
-    }
-    @include large{
-        padding: 3% 20% 5% 20%;
+        padding: 3% 15% 5% 15%;
     }
     &__hero-image{
         align-self: center;
         width: 200px;
         @include tablet{
             width: 350px;
+        }
+        @include desktop{
+            width: 450px;
         }
     }
 }
@@ -67,11 +67,13 @@
     }
     &__image-carousel{
         display: flex;
+        justify-content: center;
         width: 80vw;
         overflow: scroll;
         margin: 0;
         @include tablet{
-            width: 60vw;
+            // border: 1px solid magenta;
+            width: 70vw;
         }
     }
 }

@@ -26,11 +26,21 @@
     padding: .5rem;
     color: rgb(60, 60, 60);
     cursor: pointer;
+    font-size: 1.25rem;
     &:visited{
         color: rgb(60, 60, 60);
     }
     &:hover{
-        color: $yellow;
+        animation: textColorChange 5s forwards;
+        // &:nth-child(1){
+        //     color: $indigo;
+        // }
+        // &:nth-child(2){
+        //     color: $blue;
+        // }
+        // &:nth-child(3){
+        //     color: $red;
+        // }
     }
     &--active{
         font-weight: 700;

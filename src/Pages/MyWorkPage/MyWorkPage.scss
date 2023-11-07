@@ -13,10 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 3rem 0;
+    text-align: center;
 
     &__link{
-        font-size: 3.5rem;
+        font-size: 5.5rem;
         color: $indigo;
         margin: 3rem 0;
         &:hover{

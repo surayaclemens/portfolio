@@ -34,7 +34,7 @@ html {
     font-weight: 400;
     line-height: 2rem;
     @include desktop {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
   }
   }
 
@@ -60,6 +60,11 @@ html {
   .carousel{
     display: flex;
     padding: 1rem 0;
+    width: 100%;
+    // border: 3px solid gold;
+    @include desktop{
+      justify-content: center;
+    }
     &__image{
         width: 200px;
         margin: 0 1rem;
@@ -93,7 +98,10 @@ html {
       width: 300px;
       margin: 0 1rem;
       @include desktop{
-        width: 400px;
+        width: 500px;
+      }
+      @include large{
+        width: 600px;
       }
   }
 }
