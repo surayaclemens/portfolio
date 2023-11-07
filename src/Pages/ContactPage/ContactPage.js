@@ -29,10 +29,11 @@ function ContactPage () {
             <a href="https://github.com/surayaclemens" target='_blank' className='main__link main__link--orange'> github/surayaclemens
             </a>
           </p>
-          <p className='main__text'>Or get all the professional deets from my
+          <p className='main__text'>Or get it all in a neat
             <span>
-              <a className='main__link main__link--indigo' href={resume} target="_blank" rel="noopener noreferrer"> resume</a>
+              <a className='main__link main__link--indigo' href={resume} target="_blank" rel="noopener noreferrer"> resume </a>
             </span>
+            package
           </p>
           <p className='main__text'>Let's make something great together :~)</p>
         </div>

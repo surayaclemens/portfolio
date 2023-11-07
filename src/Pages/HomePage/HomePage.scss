@@ -18,18 +18,24 @@
         align-items: center;
         justify-content: center;
         height: 90vh;
+        background-image: url(../../Assets/hello_world_logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+        background-attachment: fixed;
     }
 
-    &__hero{
-        animation: blink 2.5s ease-in forwards;
-        width: 85%;
-        @include desktop{
-            width: 50%;
-        }
-    }
+    // &__hero{
+    //     animation: blink 2.5s ease-in forwards;
+    //     width: 85%;
+    //     @include desktop{
+    //         width: 50%;
+    //     }
+    // }
 
     &__main-content{
-        padding: 0rem 1.5rem;
+        padding: 3rem 0;
+
     }
 
     &__section{
@@ -56,18 +62,23 @@
     
         &--indigo{
             color: $indigo;
+            font-weight: 600;
         }
         &--blue{
             color: $blue; 
+            font-weight: 600;
         }
         &--red{
             color: $red;
+            font-weight: 600;
         }
         &--orange{
             color: $orange;
+            font-weight: 600;
         }
         &--yellow{
             color: $yellow;
+            font-weight: 600;
         }
         &--bold{
             font-weight: 700;
@@ -112,11 +123,14 @@
         height: 58px;
         width: 58px;
         font-size: .7rem;
+        font-weight: 600;
         border-radius: 100%;
         color: white;
+        border: 3px dotted white;
+        text-transform: capitalize;
         @include desktop {
-            height: 90px;
-            width: 90px;
+            height: 95px;
+            width: 95px;
             font-size: 1rem;
         }
         &--hidden{
@@ -124,27 +138,27 @@
         }
         &--1{
             background-color: $indigo;
-            animation: fallIntoPlace 2.5s .2s linear forwards, fadeIn 2.5s linear forwards;
+            animation: fallIntoPlace 2.5s .2s linear infinite;
             // animation-delay: .2s;
         }
         &--2{
             background-color: $blue;
-            animation: fallIntoPlace 2.5s .4s linear forwards, fadeIn 2.5s linear forwards;
+            animation: fallIntoPlace 2.5s .4s linear infinite;
 
         }
         &--3{
             background-color: $red;
-            animation: fallIntoPlace 2.5s .6s linear forwards, fadeIn 2.5s linear forwards;
+            animation: fallIntoPlace 2.5s .6s linear infinite;
 
         }
         &--4{
             background-color: $orange;
-            animation: fallIntoPlace 2.5s .8s linear forwards, fadeIn 2.5s linear forwards;
+            animation: fallIntoPlace 2.5s .8s linear infinite;
 
         }
         &--5{
             background-color: $yellow;
-            animation: fallIntoPlace 2.5s 1s linear forwards, blink 2.5s linear forwards;
+            animation: fallIntoPlace 2.5s 1s linear infinite;
 
         }
     }
@@ -170,7 +184,9 @@
     justify-content: center;
     &__button{
         background-color: $indigo;
-        width: 100%;
+        width: 60%;
+        border: 3px dotted white;
+        border-radius: 50px;
         padding: 1rem 3rem;
         margin: 2rem 0;
         color: white;
@@ -179,7 +195,12 @@
         display: flex;
         align-self: center;
         justify-content: center;
-        border: none;
-        animation: colorChange 3s infinite;
+        animation: colorChange 10s infinite;
+        @include desktop{
+            width: 100%;
+            padding: 1.5rem 2rem;
+            font-weight: 600;
+
+        }
     }
 }

@@ -38,7 +38,7 @@ function AlatuliePage ({projectTitle}) {
             <img className='carousel__image carousel__image--shadow' alt=''src={alatulieFeature1}/>
             <img className='carousel__image carousel__image--shadow' alt=''src={alatulieFeature2}/>
             <img className='carousel__image carousel__image--shadow' alt=''src={alatulieFeature3}/>
-            <img className='carousel__image carousel__image--shadow' alt=''src={alatulieFeature4}/>
+            {/* <img className='carousel__image carousel__image--shadow' alt=''src={alatulieFeature4}/> */}
 
           </div>
       }
