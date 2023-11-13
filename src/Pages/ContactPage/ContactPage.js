@@ -22,16 +22,16 @@ function ContactPage () {
             <span className='main__link main__link--blue' onClick={copyToClipboard}> surayaclemens@gmail.com</span>
           </p>
           <p className='main__text'>Or if you're more of a LinkedIn person, I'm at
-            <a href="https://www.linkedin.com/in/suraya-clemens/" target='_blank' className='main__link main__link--red'> linkedin/suraya-clemens
+            <a href="https://www.linkedin.com/in/suraya-clemens/" target='_blank' rel="noreferrer" className='main__link main__link--red'> linkedin/suraya-clemens
             </a>
           </p>
           <p className='main__text'>You can also check out my commits on
-            <a href="https://github.com/surayaclemens" target='_blank' className='main__link main__link--orange'> github/surayaclemens
+            <a href="https://github.com/surayaclemens" target='_blank' rel="noreferrer" className='main__link main__link--orange'> github/surayaclemens
             </a>
           </p>
           <p className='main__text'>Or get it all in a neat
             <span>
-              <a className='main__link main__link--indigo' href={resume} target="_blank" rel="noopener noreferrer"> resume </a>
+              <a className='main__link main__link--indigo' href={resume} target="_blank" rel="noreferrer"> resume </a>
             </span>
             package
           </p>

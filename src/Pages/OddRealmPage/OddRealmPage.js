@@ -2,12 +2,10 @@ import './OddRealmPage.scss';
 import ProjectTemplate from '../../Components/ProjectTemplate/ProjectTemplate';
 import oddrealmHero from '../../Assets/project-shots/odd-realm/hero.png';
 import oddrealmFeature1 from '../../Assets/project-shots/odd-realm/or_feature-1.png';
-import oddrealmFeature2 from '../../Assets/project-shots/odd-realm/or_feature-2.png';
 import oddrealmFeature3 from '../../Assets/project-shots/odd-realm/or_feature-3.png';
 import oddrealmMore1 from '../../Assets/project-shots/odd-realm/more1.png';
 import oddrealmMore2 from '../../Assets/project-shots/odd-realm/more2.png';
 import oddrealmMore3 from '../../Assets/project-shots/odd-realm/more3.png';
-import oddrealmMore4 from '../../Assets/project-shots/odd-realm/more4.png';
 
 
 function OddRealmPage ({projectTitle}) {

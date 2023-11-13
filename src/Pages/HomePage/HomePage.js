@@ -1,8 +1,6 @@
 import './HomePage.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect} from 'react';
-import helloWorld from '../../Assets/hello_world_logo.svg';
-import Modal from '../../Components/Modal/Modal';
 
 function HomePage () {
 

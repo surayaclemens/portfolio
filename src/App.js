@@ -1,6 +1,5 @@
 import './App.scss';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { Component } from 'react';
 import HomePage from "./Pages/HomePage/HomePage";
 import MorphologyPage from "./Pages/MorphologyPage/MorphologyPage";
 import MyWorkPage from './Pages/MyWorkPage/MyWorkPage';
@@ -9,7 +8,7 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 import OddRealmPage from './Pages/OddRealmPage/OddRealmPage';
 import CedulifyPage from './Pages/CedulifyPage/CedulifyPage';
 import AlatuliePage from './Pages/AlatuliePage/AlatuliePage';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import sunIcon from './Assets/sun-icon.png';
 import moonIcon from './Assets/moon-icon.png';
 import Footer from './Components/Footer/Footer';

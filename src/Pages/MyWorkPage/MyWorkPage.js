@@ -19,6 +19,7 @@ function MyWorkPage () {
     oddrealm: false,
     alatulie: false,
     vanbros: false,
+    portfolio: false
   });
 
   const handleMouseOver = (linkKey) => {
@@ -41,21 +42,25 @@ function MyWorkPage () {
     return (
       <div className='work'>
         <main className='list'>
-          <NavLink onMouseEnter={() => handleMouseOver('cedulify')} onMouseLeave={() => handleMouseLeave('cedulify')} className="list__link "to="/cedulify">
-            Cedulify
-            {modalOpen.cedulify && <Modal tags="web, mobile, angular, scss, node.js, flutter, dart, material design, firebase, wellness"/>}
-          </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('morphology')} onMouseLeave={() => handleMouseLeave('morphology')} className="list__link "to="/morphology">
             Morphology
-            {modalOpen.morphology && <Modal tags="web, react, node.js, firebase, design, linguistics"/>}
+            {modalOpen.morphology && <Modal tags="web, next.js, tailwind, mongo, aws, design, education, linguistics"/>}
+          </NavLink>
+          <NavLink onMouseEnter={() => handleMouseOver('cedulify')} onMouseLeave={() => handleMouseLeave('cedulify')} className="list__link "to="/cedulify">
+            Cedulify
+            {modalOpen.cedulify && <Modal tags="web, mobile, angular, scss, node.js, flutter, dart, material design, firebase, docker, wellness"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('oddrealm')} onMouseLeave={() => handleMouseLeave('oddrealm')} className="list__link "to="/oddrealm">
             Odd Realm
-            {modalOpen.oddrealm && <Modal tags="web, react, node.js, tailwind, design, marketing site"/>}
+            {modalOpen.oddrealm && <Modal tags="web, react, node.js, tailwind, design, gaming"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('alatulie')} onMouseLeave={() => handleMouseLeave('alatulie')} className="list__link "to="/alatulie">
             Alatúlie
-            {modalOpen.alatulie && <Modal tags="web, react, scss, design, linguistics, fantasy, hackathon"/>}
+            {modalOpen.alatulie && <Modal tags="web, react, scss, design, fantasy, hackathon"/>}
+          </NavLink>
+          <NavLink onMouseEnter={() => handleMouseOver('portfolio')} onMouseLeave={() => handleMouseLeave('portfolio')} className="list__link "to="/">
+            This portfolio
+            {modalOpen.portfolio && <Modal tags="web, react, scss, heroku, design, portfolio"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('vanbros')} onMouseLeave={() => handleMouseLeave('vanbros')} className="list__link "to="/vanbros">
             Van Brothers

@@ -17,14 +17,14 @@ function MorphologyPage ({projectTitle}) {
       <ProjectTemplate 
         projectTitle={<h1 className='morphology__title'>Morphology</h1>}
         projectImage={morphologyHero}
-        overviewDetails={<p className='section__details'>Morphology is an upcoming web app for learning heritage languages. My ultimate passion project, the app and its marketing site are 100% designed and developed by me. Coming soon!</p>}
+        overviewDetails={<p className='section__details'>Morphology is a gamified learning platform for heritage languages. My ultimate passion project, the app and its marketing site are 100% designed and developed by me. Landing page is available <a href='https://www.learnmorphology.ca/' target="_blank" rel="noreferrer">here</a>, MVP app coming soon!</p>}
         roleDetails={
           <ul className='section__list'>
-            <li className='section__list-item'>Linguistic research</li>
+            <li className='section__list-item'>Linguistic research & resource development</li>
             <li className='section__list-item'>UX and UI design</li>
-            <li className='section__list-item'>Front-end development with React</li>
-            <li className='section__list-item'>Back-end development with Node.js</li>
-            <li className='section__list-item'>Database architecture</li>
+            <li className='section__list-item'>Full-stack web development with Next.js</li>
+            <li className='section__list-item'>Database architecture in Mongo Atlas</li>
+            <li className='section__list-item'>Deployment with AWS Amplify</li>
             <li className='section__list-item'>Copywriting and editing</li>
             <li className='section__list-item'>Marketing</li>
           </ul>
@@ -43,7 +43,7 @@ function MorphologyPage ({projectTitle}) {
           <li className='section__list-item'>Identify needs from learners</li>
           <li className='section__list-item'>Wireframe user flow, draft UX copy</li>
           <li className='section__list-item'>Brand design, iconography, hi-fi mockups</li>
-          <li className='section__list-item'>Database design and planning, setup in Firebase</li>
+          <li className='section__list-item'>Database design and planning</li>
           <li className='section__list-item'>Development and design iteration</li>
           <li className='section__list-item'>Testing, bug fixes, deployment</li>
           <li className='section__list-item'>Continued improvements and updates</li>
@@ -51,13 +51,16 @@ function MorphologyPage ({projectTitle}) {
       }
       toolDetails={
       <ul className='section__list'>
-        <li className='section__list-item'>Dev ops</li>
-        <li className='section__list-item'>Figma prototyping</li>
-        <li className='section__list-item'>How to dream big</li>
-        <li className='section__list-item'>Patience 🙏🏽</li>
+        <li className='section__list-item'>So much! I challenged myself to a whole new stack:</li>
+        <li className='section__list-item'>Next.js</li>
+        <li className='section__list-item'>TailwindCSS</li>
+        <li className='section__list-item'>Mongo DB</li>
+        <li className='section__list-item'>AWS Amplify</li>
+        <li className='section__list-item'>Giving myself grace on a learning curve</li>
+        <li className='section__list-item'>Dreaming and aiming big 💥</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>You can expect to read more about Morphology late 2023.</p>
+          <p className='section__details'>The landing page is live! Take a look <a href='https://www.learnmorphology.ca/' target='_blank' rel='noreferrer'>here,</a> and check back for development updates.</p>
         }
         moreImages={
           <div className='carousel'>

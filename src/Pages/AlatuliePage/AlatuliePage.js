@@ -4,10 +4,8 @@ import alatulieHero from '../../Assets/project-shots/alatulie/alatulie-hero.png'
 import alatulieFeature1 from '../../Assets/project-shots/alatulie/select.png';
 import alatulieFeature2 from '../../Assets/project-shots/alatulie/input.png';
 import alatulieFeature3 from '../../Assets/project-shots/alatulie/output.png';
-import alatulieFeature4 from '../../Assets/project-shots/alatulie/code.png';
 import alatulieMore1 from '../../Assets/project-shots/alatulie/more1.png';
 import alatulieMore2 from '../../Assets/project-shots/alatulie/more2.png';
-import alatulieMore3 from '../../Assets/project-shots/alatulie/more3.png';
 import alatulieMore4 from '../../Assets/project-shots/alatulie/more4.png';
 import alatulieMore5 from '../../Assets/project-shots/alatulie/more5.png';
 
