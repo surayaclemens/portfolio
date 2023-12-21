@@ -52,19 +52,19 @@ function MyWorkPage () {
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('oddrealm')} onMouseLeave={() => handleMouseLeave('oddrealm')} className="list__link "to="/oddrealm">
             Odd Realm
-            {modalOpen.oddrealm && <Modal tags="web, react, node.js, tailwind, design, gaming"/>}
+            {modalOpen.oddrealm && <Modal tags="web, next.js, vercel, tailwind, design, gaming"/>}
           </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('alatulie')} onMouseLeave={() => handleMouseLeave('alatulie')} className="list__link "to="/alatulie">
             Alatúlie
             {modalOpen.alatulie && <Modal tags="web, react, scss, design, fantasy, hackathon"/>}
           </NavLink>
-          <NavLink onMouseEnter={() => handleMouseOver('portfolio')} onMouseLeave={() => handleMouseLeave('portfolio')} className="list__link "to="/">
-            This portfolio
-            {modalOpen.portfolio && <Modal tags="web, react, scss, heroku, design, portfolio"/>}
-          </NavLink>
           <NavLink onMouseEnter={() => handleMouseOver('vanbros')} onMouseLeave={() => handleMouseLeave('vanbros')} className="list__link "to="/vanbros">
             Van Brothers
             {modalOpen.vanbros && <Modal tags="web, cms, design, branding, marketing site"/>}
+          </NavLink>
+          <NavLink onMouseEnter={() => handleMouseOver('portfolio')} onMouseLeave={() => handleMouseLeave('portfolio')} className="list__link "to="/">
+            This portfolio
+            {modalOpen.portfolio && <Modal tags="web, react, scss, heroku, design, portfolio"/>}
           </NavLink>
         </main>
       </div>

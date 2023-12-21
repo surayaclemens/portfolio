@@ -20,7 +20,7 @@ function App (){
     document.title="suraya clemens | web developer"
 
     // set default to light mode
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     const toDarkMode = () => {
       setIsDarkMode(true);
