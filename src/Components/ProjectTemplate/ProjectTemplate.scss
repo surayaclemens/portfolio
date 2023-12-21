@@ -53,6 +53,12 @@
             }
         }
     }
+    &__link{
+        color: $forest;
+        &:visited{
+            color: $forest;
+        }
+    }
     &__list{
         margin-left: 1rem;
         list-style: none;
@@ -60,7 +66,7 @@
     &__list-item{
         &::before {
             content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-            color: $indigo; /* Change the color */
+            color: $forest; /* Change the color */
             display: inline-block; /* Needed to add space between the bullet and the text */
             width: 1rem; /* Also needed for space (tweak if needed) */
             margin-left: -1rem; /* Also needed for space (tweak if needed) */
@@ -73,7 +79,7 @@
         overflow: scroll;
         margin: 0;
         @include tablet{
-            // border: 1px solid magenta;
+            // border: 1px solid pink;
             width: 70vw;
         }
     }
@@ -92,7 +98,7 @@
     font-weight: 400;
     font-size: 1.25rem;
         &--color{
-            color: $indigo;
+            color: $yellow;
             font-weight: 600;
             cursor: pointer;
         }

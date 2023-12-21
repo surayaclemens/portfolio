@@ -6,10 +6,18 @@ import oddrealmFeature3 from '../../Assets/project-shots/odd-realm/or_feature-3.
 import oddrealmMore1 from '../../Assets/project-shots/odd-realm/more1.png';
 import oddrealmMore2 from '../../Assets/project-shots/odd-realm/more2.png';
 import oddrealmMore3 from '../../Assets/project-shots/odd-realm/more3.png';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 
 function OddRealmPage ({projectTitle}) {
   document.title=`${projectTitle}`
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when location changes
+  }, [location]);
 
   return (
     <main className='oddrealm'>
@@ -52,7 +60,7 @@ function OddRealmPage ({projectTitle}) {
         <li className='section__list-item'>Problem solving</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>This project is currently under development - no live links yet! In the meantime, check out the game <a href='https://store.steampowered.com/app/688060/Odd_Realm/'>on Steam</a>.</p>
+          <p className='section__details'>This project is currently under development - no live links yet! In the meantime, check out the game <a className='section__link' href='https://store.steampowered.com/app/688060/Odd_Realm/'>on Steam</a>.</p>
         }
         moreImages={
           <div className='carousel'>

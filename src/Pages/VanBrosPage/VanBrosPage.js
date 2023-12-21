@@ -7,10 +7,17 @@ import vanbrosMore1 from '../../Assets/project-shots/van-bros/more1.png';
 import vanbrosMore2 from '../../Assets/project-shots/van-bros/more2.png';
 import vanbrosMore3 from '../../Assets/project-shots/van-bros/more3.png';
 import vanbrosMore4 from '../../Assets/project-shots/van-bros/more4.png';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 function VanBrosPage ({projectTitle}) {
   document.title=`${projectTitle}`
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when location changes
+  }, [location]);
 
   return (
     <main className='vanbros'>
@@ -56,15 +63,10 @@ function VanBrosPage ({projectTitle}) {
         <li className='section__list-item'>Putting together a design kit</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>You can check out every screen of the Van Brothers website <a href='https://www.vanbros.ca/'>right here</a>.</p>
+          <p className='section__details'>You can check out every screen of the Van Brothers website <a className='section__link' href='https://www.vanbros.ca/'>right here</a>.</p>
         }
         moreImages={
           <div className='carousel'>
-            {/* <img className='carousel__image' alt=''src={vanbrosMore1}/>
-            <img className='carousel__image' alt=''src={vanbrosMore3}/>
-            <div className='carousel__wide'>
-              <img className='carousel__wide-image' alt=''src={vanbrosMore4}/>
-            </div> */}
             <img className='carousel__double-image carousel__image--shadow' alt=''src={vanbrosMore1}/>
             <img className='carousel__double-image carousel__image--shadow' alt=''src={vanbrosMore2}/>
             <img className='carousel__double-image carousel__image--shadow' alt=''src={vanbrosMore3}/>

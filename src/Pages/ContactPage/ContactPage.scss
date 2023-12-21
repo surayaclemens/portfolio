@@ -4,16 +4,20 @@
 @use '../../Styles/Partials/animations' as *;
 
 .main{
+    padding: 0 3rem;
+    @include tablet{
+        padding: 3rem;
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 5% 0;
-        padding: 0rem 1.5rem;
+        margin: 4% 0;
         height: 70vh;
         @include tablet {
-            padding: 0% 20%;
-            height: 50vh;
+            height: 100vh;
+            padding: 0 20%;
         }
     }
     &__subheader{
@@ -27,17 +31,17 @@
     &__link{
         font-weight: 600;
         cursor: pointer;
-        &--indigo{
-            color: $indigo;
+        &--purple{
+            color: $purple;
         }
-        &--blue{
-            color: $blue;
+        &--green{
+            color: $green;
         }
-        &--red{
-            color: $red;
+        &--pink{
+            color: $pink;
         }
-        &--orange{
-            color: $orange;
+        &--forest{
+            color: $forest;
         }
     }
 }

@@ -3,11 +3,11 @@
 
 @keyframes colorChange {
     0%   {
-        background-color: $orange;
+        background-color: $pink;
     }
     
     20%  {
-        background-color: $blue;
+        background-color: $green;
     }
     
     40%  {
@@ -15,26 +15,26 @@
     }
     
     60%  {
-        background-color: $red;
+        background-color: $pink;
     }
     
     80% {
-        background-color: $indigo;
+        background-color: $purple;
     }
 
     100% {
-        background-color: $orange;
+        background-color: $pink;
     }
     
   }
 
   @keyframes textColorChange {
     0%   {
-        color: $orange;
+        color: $pink;
     }
     
     20%  {
-        color: $blue;
+        color: $green;
     }
     
     40%  {
@@ -42,15 +42,15 @@
     }
     
     60%  {
-        color: $red;
+        color: $pink;
     }
     
     80% {
-        color: $indigo;
+        color: $purple;
     }
 
     100% {
-        color: $orange;
+        color: $pink;
     }
     
   }

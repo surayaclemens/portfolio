@@ -17,7 +17,7 @@ function MorphologyPage ({projectTitle}) {
       <ProjectTemplate 
         projectTitle={<h1 className='morphology__title'>Morphology</h1>}
         projectImage={morphologyHero}
-        overviewDetails={<p className='section__details'>Morphology is a gamified learning platform for heritage languages. My ultimate passion project, the app and its marketing site are 100% designed and developed by me. Landing page is available <a href='https://www.learnmorphology.ca/' target="_blank" rel="noreferrer">here</a>, MVP app coming soon!</p>}
+        overviewDetails={<p className='section__details'>Morphology is a gamified learning platform for heritage languages. My ultimate passion project, the app and its marketing site are 100% designed and developed by me. Landing page is available <a className='section__link' href='https://www.learnmorphology.ca/' target="_blank" rel="noreferrer">here</a>, MVP app coming soon!</p>}
         roleDetails={
           <ul className='section__list'>
             <li className='section__list-item'>Linguistic research & resource development</li>
@@ -60,7 +60,7 @@ function MorphologyPage ({projectTitle}) {
         <li className='section__list-item'>Dreaming and aiming big 💥</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>The landing page is live! Take a look <a href='https://www.learnmorphology.ca/' target='_blank' rel='noreferrer'>here,</a> and check back for development updates.</p>
+          <p className='section__details'>The landing page is live! Take a look <a className='section__link' href='https://www.learnmorphology.ca/' target='_blank' rel='noreferrer'>here,</a> and check back for development updates.</p>
         }
         moreImages={
           <div className='carousel'>

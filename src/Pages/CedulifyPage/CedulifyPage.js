@@ -80,7 +80,7 @@ function CedulifyPage ({projectTitle}) {
         <li className='section__list-item'>How to do business the human way</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>Cedulify is available for download on the App Store and Google Play, and you can find additional info on <a href='https://www.cedulify.com/'>their website</a>.</p>
+          <p className='section__details'>Cedulify is available for download on the App Store and Google Play, and you can find additional info on <a className='section__link' href='https://www.cedulify.com/'>their website</a>.</p>
         }
         moreImages={
           <div className='carousel'>
