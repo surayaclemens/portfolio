@@ -23,7 +23,7 @@ function MyWorkPage () {
   });
 
   const handleMouseOver = (linkKey) => {
-    console.log('mouse entered link');
+    // console.log('mouse entered link');
     setModalOpen((prevState) => ({
       ...prevState,
       [linkKey]: true,
@@ -31,7 +31,7 @@ function MyWorkPage () {
   }
 
   const handleMouseLeave = (linkKey) => {
-    console.log('mouse entered link');
+    // console.log('mouse entered link');
     setModalOpen((prevState) => ({
       ...prevState,
       [linkKey]: false,

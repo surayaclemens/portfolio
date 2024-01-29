@@ -7,16 +7,10 @@ function HomePage () {
 
   const location = useLocation();
   useEffect(() => {
+    console.log("Hey, thanks for opening the console! Hope you don't find any errors in here xo")
     window.scrollTo(0, 0); // Scroll to the top when location changes
   }, [location]);
 
-  // set initial state
-  // let [dropBalls, setBallState] = useState(false);
-
-  // const showValueBalls = () => {
-  //   setBallState(true);
-  //   console.log("Hey, thanks for opening the console! Hope you don't find any errors in here xo")
-  // }
 
   document.title="Suraya Clemens | Web Developer"
     return (
