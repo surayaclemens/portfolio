@@ -24,11 +24,11 @@ function OddRealmPage ({projectTitle}) {
       <ProjectTemplate 
         projectTitle={<h1 className='oddrealm__title'>Odd Realm</h1>}
         projectImage={oddrealmHero}
-        overviewDetails={<p className='section__details'>Odd Realm is a colony-simulation PC game set in a procedurally-generated fantasy world, set to release January 2024. In this freelance contract, I created a brand identity and website in line with the game's bright personality.</p>}
+        overviewDetails={<p className='section__details'>Odd Realm is a colony-simulation PC game set in a procedurally-generated fantasy world, released August 2024. In this freelance contract, I created a brand identity and website in line with the game's bright personality.</p>}
         roleDetails={
           <ul className='section__list'>
             <li className='section__list-item'>UX and UI design</li>
-            <li className='section__list-item'>Web development with React and Node.js</li>
+            <li className='section__list-item'>Web development with Next.js and Tailwind</li>
             <li className='section__list-item'>Domain migration and deployment</li>
             <li className='section__list-item'>Brand cohesion, marketing materials</li>
           </ul>
@@ -55,12 +55,12 @@ function OddRealmPage ({projectTitle}) {
       }
       toolDetails={
       <ul className='section__list'>
-        <li className='section__list-item'>i18next, SendGrid, Tailwind</li>
+        <li className='section__list-item'>i18next, Tailwind</li>
         <li className='section__list-item'>Collaboration with game devs</li>
         <li className='section__list-item'>Problem solving</li>
       </ul>}
         moreDetails={
-          <p className='section__details'>This project is currently under development - no live links yet! In the meantime, check out the game <a className='section__link' href='https://store.steampowered.com/app/688060/Odd_Realm/'>on Steam</a>.</p>
+          <p className='section__details'>Check out the finished version <a className='section__link' target='_blank' href='https://www.oddrealmgame.com/'>here</a>.</p>
         }
         moreImages={
           <div className='carousel'>
