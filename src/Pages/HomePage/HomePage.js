@@ -62,7 +62,7 @@ function HomePage () {
             <section className='home__section'>
                 <h3 className='home__subheader'>TL;DR</h3>
                 <p className='home__body'>
-                I'm a dedicated developer who relishes opportunities to learn new things and thrives in environments that are values-driven. My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of making work fun. My friends know me as a language dork, avid sewist, and person obsessed with her dog. Let's make something great together :~)</p>
+                I'm a dedicated developer who relishes opportunities to learn new things and thrives in environments that are values-driven. My colleagues know me as an initiative-taker, problem solver, excellent communicator, and big fan of making work fun. My friends know me as a language dork, music fan, and avid sewist. Let's make something great together :~)</p>
             </section>
             <section className='home__section'>
               <NavLink className='home-button'to='/mywork'>
